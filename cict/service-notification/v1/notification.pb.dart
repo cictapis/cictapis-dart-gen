@@ -10,10 +10,10 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
-import '../../common/v1/paginate.pb.dart' as $26;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
+import '../../common/v1/paginate.pb.dart' as $28;
 
-import '../../common/v1/enum_mask_behavior.pbenum.dart' as $23;
+import '../../common/v1/enum_mask_behavior.pbenum.dart' as $25;
 
 class SubscribeNotificationResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'SubscribeNotificationResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_notification.v1'), createEmptyInstance: create)
@@ -65,8 +65,8 @@ class SubscribeNotificationResponse extends $pb.GeneratedMessage {
 class CreateNotificationRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'CreateNotificationRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_notification.v1'), createEmptyInstance: create)
     ..pc<Notification>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'notifications', $pb.PbFieldType.PM, subBuilder: Notification.create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..aOB(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'partialFailure')
     ..hasRequiredFields = false
   ;
@@ -74,8 +74,8 @@ class CreateNotificationRequest extends $pb.GeneratedMessage {
   CreateNotificationRequest._() : super();
   factory CreateNotificationRequest({
     $core.Iterable<Notification>? notifications,
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
     $core.bool? partialFailure,
   }) {
     final _result = create();
@@ -118,24 +118,24 @@ class CreateNotificationRequest extends $pb.GeneratedMessage {
   $core.List<Notification> get notifications => $_getList(0);
 
   @$pb.TagNumber(2)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(1);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(1);
   @$pb.TagNumber(2)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(2, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaskBehavior() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaskBehavior() => clearField(2);
 
   @$pb.TagNumber(3)
-  $19.FieldMask get mask => $_getN(2);
+  $21.FieldMask get mask => $_getN(2);
   @$pb.TagNumber(3)
-  set mask($19.FieldMask v) { setField(3, v); }
+  set mask($21.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearMask() => clearField(3);
   @$pb.TagNumber(3)
-  $19.FieldMask ensureMask() => $_ensure(2);
+  $21.FieldMask ensureMask() => $_ensure(2);
 
   @$pb.TagNumber(4)
   $core.bool get partialFailure => $_getBF(3);
@@ -278,7 +278,7 @@ class MutateNotificationUpdate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateNotificationUpdate', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_notification.v1'), createEmptyInstance: create)
     ..pPS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'ids')
     ..aOM<Notification>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'notification', subBuilder: Notification.create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
     ..aOB(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'partialFailure')
     ..hasRequiredFields = false
   ;
@@ -287,7 +287,7 @@ class MutateNotificationUpdate extends $pb.GeneratedMessage {
   factory MutateNotificationUpdate({
     $core.Iterable<$core.String>? ids,
     Notification? notification,
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
     $core.bool? partialFailure,
   }) {
     final _result = create();
@@ -341,9 +341,9 @@ class MutateNotificationUpdate extends $pb.GeneratedMessage {
   Notification ensureNotification() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(2);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(2);
   @$pb.TagNumber(3)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(3, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMaskBehavior() => $_has(2);
   @$pb.TagNumber(3)
@@ -464,16 +464,16 @@ class MutateNotificationResponse extends $pb.GeneratedMessage {
 class GetNotificationRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'GetNotificationRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_notification.v1'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
   GetNotificationRequest._() : super();
   factory GetNotificationRequest({
     $core.String? id,
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
   }) {
     final _result = create();
     if (id != null) {
@@ -518,24 +518,24 @@ class GetNotificationRequest extends $pb.GeneratedMessage {
   void clearId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(1);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(1);
   @$pb.TagNumber(2)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(2, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaskBehavior() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaskBehavior() => clearField(2);
 
   @$pb.TagNumber(3)
-  $19.FieldMask get mask => $_getN(2);
+  $21.FieldMask get mask => $_getN(2);
   @$pb.TagNumber(3)
-  set mask($19.FieldMask v) { setField(3, v); }
+  set mask($21.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearMask() => clearField(3);
   @$pb.TagNumber(3)
-  $19.FieldMask ensureMask() => $_ensure(2);
+  $21.FieldMask ensureMask() => $_ensure(2);
 }
 
 class GetNotificationResponse extends $pb.GeneratedMessage {
@@ -589,17 +589,17 @@ class GetNotificationResponse extends $pb.GeneratedMessage {
 
 class ListNotificationRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListNotificationRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_notification.v1'), createEmptyInstance: create)
-    ..aOM<$26.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $26.Paginate.create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..aOM<$28.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $28.Paginate.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
   ListNotificationRequest._() : super();
   factory ListNotificationRequest({
-    $26.Paginate? paginate,
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $28.Paginate? paginate,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
   }) {
     final _result = create();
     if (paginate != null) {
@@ -635,35 +635,35 @@ class ListNotificationRequest extends $pb.GeneratedMessage {
   static ListNotificationRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $26.Paginate get paginate => $_getN(0);
+  $28.Paginate get paginate => $_getN(0);
   @$pb.TagNumber(1)
-  set paginate($26.Paginate v) { setField(1, v); }
+  set paginate($28.Paginate v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPaginate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPaginate() => clearField(1);
   @$pb.TagNumber(1)
-  $26.Paginate ensurePaginate() => $_ensure(0);
+  $28.Paginate ensurePaginate() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(1);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(1);
   @$pb.TagNumber(2)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(2, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMaskBehavior() => $_has(1);
   @$pb.TagNumber(2)
   void clearMaskBehavior() => clearField(2);
 
   @$pb.TagNumber(3)
-  $19.FieldMask get mask => $_getN(2);
+  $21.FieldMask get mask => $_getN(2);
   @$pb.TagNumber(3)
-  set mask($19.FieldMask v) { setField(3, v); }
+  set mask($21.FieldMask v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasMask() => $_has(2);
   @$pb.TagNumber(3)
   void clearMask() => clearField(3);
   @$pb.TagNumber(3)
-  $19.FieldMask ensureMask() => $_ensure(2);
+  $21.FieldMask ensureMask() => $_ensure(2);
 }
 
 class ListNotificationResponse extends $pb.GeneratedMessage {

@@ -10,24 +10,24 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'course_timetable.pb.dart' as $9;
+import 'course_timetable.pb.dart' as $11;
 export 'course_timetable.pb.dart';
 
 class CourseTimetableClient extends $grpc.Client {
   static final _$getUserTimetable = $grpc.ClientMethod<
-          $9.GetUserTimetableRequest, $9.GetUserTimetableResponse>(
+          $11.GetUserTimetableRequest, $11.GetUserTimetableResponse>(
       '/cict.service_course.v1.CourseTimetable/GetUserTimetable',
-      ($9.GetUserTimetableRequest value) => value.writeToBuffer(),
+      ($11.GetUserTimetableRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $9.GetUserTimetableResponse.fromBuffer(value));
+          $11.GetUserTimetableResponse.fromBuffer(value));
 
   CourseTimetableClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$9.GetUserTimetableResponse> getUserTimetable(
-      $9.GetUserTimetableRequest request,
+  $grpc.ResponseFuture<$11.GetUserTimetableResponse> getUserTimetable(
+      $11.GetUserTimetableRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getUserTimetable, request, options: options);
   }
@@ -37,23 +37,23 @@ abstract class CourseTimetableServiceBase extends $grpc.Service {
   $core.String get $name => 'cict.service_course.v1.CourseTimetable';
 
   CourseTimetableServiceBase() {
-    $addMethod($grpc.ServiceMethod<$9.GetUserTimetableRequest,
-            $9.GetUserTimetableResponse>(
+    $addMethod($grpc.ServiceMethod<$11.GetUserTimetableRequest,
+            $11.GetUserTimetableResponse>(
         'GetUserTimetable',
         getUserTimetable_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $9.GetUserTimetableRequest.fromBuffer(value),
-        ($9.GetUserTimetableResponse value) => value.writeToBuffer()));
+            $11.GetUserTimetableRequest.fromBuffer(value),
+        ($11.GetUserTimetableResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$9.GetUserTimetableResponse> getUserTimetable_Pre(
+  $async.Future<$11.GetUserTimetableResponse> getUserTimetable_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$9.GetUserTimetableRequest> request) async {
+      $async.Future<$11.GetUserTimetableRequest> request) async {
     return getUserTimetable(call, await request);
   }
 
-  $async.Future<$9.GetUserTimetableResponse> getUserTimetable(
-      $grpc.ServiceCall call, $9.GetUserTimetableRequest request);
+  $async.Future<$11.GetUserTimetableResponse> getUserTimetable(
+      $grpc.ServiceCall call, $11.GetUserTimetableRequest request);
 }

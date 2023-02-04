@@ -9,13 +9,13 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'session.pb.dart' as $3;
-import 'role_accessibility.pb.dart' as $29;
+import 'session.pb.dart' as $4;
+import 'role_accessibility.pb.dart' as $31;
 
 class PropagationCache extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'PropagationCache', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
-    ..aOM<$3.Session>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'session', subBuilder: $3.Session.create)
-    ..aOM<$29.RoleAccessibility>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'roleAccessibility', subBuilder: $29.RoleAccessibility.create)
+    ..aOM<$4.Session>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'session', subBuilder: $4.Session.create)
+    ..aOM<$31.RoleAccessibility>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'roleAccessibility', subBuilder: $31.RoleAccessibility.create)
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'locale')
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'workspaceId')
     ..hasRequiredFields = false
@@ -23,8 +23,8 @@ class PropagationCache extends $pb.GeneratedMessage {
 
   PropagationCache._() : super();
   factory PropagationCache({
-    $3.Session? session,
-    $29.RoleAccessibility? roleAccessibility,
+    $4.Session? session,
+    $31.RoleAccessibility? roleAccessibility,
     $core.String? locale,
     $core.String? workspaceId,
   }) {
@@ -65,26 +65,26 @@ class PropagationCache extends $pb.GeneratedMessage {
   static PropagationCache? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $3.Session get session => $_getN(0);
+  $4.Session get session => $_getN(0);
   @$pb.TagNumber(1)
-  set session($3.Session v) { setField(1, v); }
+  set session($4.Session v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasSession() => $_has(0);
   @$pb.TagNumber(1)
   void clearSession() => clearField(1);
   @$pb.TagNumber(1)
-  $3.Session ensureSession() => $_ensure(0);
+  $4.Session ensureSession() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $29.RoleAccessibility get roleAccessibility => $_getN(1);
+  $31.RoleAccessibility get roleAccessibility => $_getN(1);
   @$pb.TagNumber(2)
-  set roleAccessibility($29.RoleAccessibility v) { setField(2, v); }
+  set roleAccessibility($31.RoleAccessibility v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRoleAccessibility() => $_has(1);
   @$pb.TagNumber(2)
   void clearRoleAccessibility() => clearField(2);
   @$pb.TagNumber(2)
-  $29.RoleAccessibility ensureRoleAccessibility() => $_ensure(1);
+  $31.RoleAccessibility ensureRoleAccessibility() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.String get locale => $_getSZ(2);

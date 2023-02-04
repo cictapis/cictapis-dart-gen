@@ -10,48 +10,48 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'template.pb.dart' as $18;
+import 'template.pb.dart' as $20;
 export 'template.pb.dart';
 
 class TemplateServiceClient extends $grpc.Client {
   static final _$mutateTemplate =
-      $grpc.ClientMethod<$18.MutateTemplateRequest, $18.MutateTemplateResponse>(
+      $grpc.ClientMethod<$20.MutateTemplateRequest, $20.MutateTemplateResponse>(
           '/cict.service_reporter.v1.TemplateService/MutateTemplate',
-          ($18.MutateTemplateRequest value) => value.writeToBuffer(),
+          ($20.MutateTemplateRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $18.MutateTemplateResponse.fromBuffer(value));
+              $20.MutateTemplateResponse.fromBuffer(value));
   static final _$listTemplate =
-      $grpc.ClientMethod<$18.ListTemplateRequest, $18.ListTemplateResponse>(
+      $grpc.ClientMethod<$20.ListTemplateRequest, $20.ListTemplateResponse>(
           '/cict.service_reporter.v1.TemplateService/ListTemplate',
-          ($18.ListTemplateRequest value) => value.writeToBuffer(),
+          ($20.ListTemplateRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $18.ListTemplateResponse.fromBuffer(value));
+              $20.ListTemplateResponse.fromBuffer(value));
   static final _$getTemplate =
-      $grpc.ClientMethod<$18.GetTemplateRequest, $18.GetTemplateResponse>(
+      $grpc.ClientMethod<$20.GetTemplateRequest, $20.GetTemplateResponse>(
           '/cict.service_reporter.v1.TemplateService/GetTemplate',
-          ($18.GetTemplateRequest value) => value.writeToBuffer(),
+          ($20.GetTemplateRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $18.GetTemplateResponse.fromBuffer(value));
+              $20.GetTemplateResponse.fromBuffer(value));
 
   TemplateServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$18.MutateTemplateResponse> mutateTemplate(
-      $18.MutateTemplateRequest request,
+  $grpc.ResponseFuture<$20.MutateTemplateResponse> mutateTemplate(
+      $20.MutateTemplateRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$mutateTemplate, request, options: options);
   }
 
-  $grpc.ResponseFuture<$18.ListTemplateResponse> listTemplate(
-      $18.ListTemplateRequest request,
+  $grpc.ResponseFuture<$20.ListTemplateResponse> listTemplate(
+      $20.ListTemplateRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listTemplate, request, options: options);
   }
 
-  $grpc.ResponseFuture<$18.GetTemplateResponse> getTemplate(
-      $18.GetTemplateRequest request,
+  $grpc.ResponseFuture<$20.GetTemplateResponse> getTemplate(
+      $20.GetTemplateRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getTemplate, request, options: options);
   }
@@ -61,56 +61,56 @@ abstract class TemplateServiceBase extends $grpc.Service {
   $core.String get $name => 'cict.service_reporter.v1.TemplateService';
 
   TemplateServiceBase() {
-    $addMethod($grpc.ServiceMethod<$18.MutateTemplateRequest,
-            $18.MutateTemplateResponse>(
+    $addMethod($grpc.ServiceMethod<$20.MutateTemplateRequest,
+            $20.MutateTemplateResponse>(
         'MutateTemplate',
         mutateTemplate_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $18.MutateTemplateRequest.fromBuffer(value),
-        ($18.MutateTemplateResponse value) => value.writeToBuffer()));
+            $20.MutateTemplateRequest.fromBuffer(value),
+        ($20.MutateTemplateResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$18.ListTemplateRequest, $18.ListTemplateResponse>(
+        $grpc.ServiceMethod<$20.ListTemplateRequest, $20.ListTemplateResponse>(
             'ListTemplate',
             listTemplate_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $18.ListTemplateRequest.fromBuffer(value),
-            ($18.ListTemplateResponse value) => value.writeToBuffer()));
+                $20.ListTemplateRequest.fromBuffer(value),
+            ($20.ListTemplateResponse value) => value.writeToBuffer()));
     $addMethod(
-        $grpc.ServiceMethod<$18.GetTemplateRequest, $18.GetTemplateResponse>(
+        $grpc.ServiceMethod<$20.GetTemplateRequest, $20.GetTemplateResponse>(
             'GetTemplate',
             getTemplate_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $18.GetTemplateRequest.fromBuffer(value),
-            ($18.GetTemplateResponse value) => value.writeToBuffer()));
+                $20.GetTemplateRequest.fromBuffer(value),
+            ($20.GetTemplateResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$18.MutateTemplateResponse> mutateTemplate_Pre(
+  $async.Future<$20.MutateTemplateResponse> mutateTemplate_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$18.MutateTemplateRequest> request) async {
+      $async.Future<$20.MutateTemplateRequest> request) async {
     return mutateTemplate(call, await request);
   }
 
-  $async.Future<$18.ListTemplateResponse> listTemplate_Pre(
+  $async.Future<$20.ListTemplateResponse> listTemplate_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$18.ListTemplateRequest> request) async {
+      $async.Future<$20.ListTemplateRequest> request) async {
     return listTemplate(call, await request);
   }
 
-  $async.Future<$18.GetTemplateResponse> getTemplate_Pre($grpc.ServiceCall call,
-      $async.Future<$18.GetTemplateRequest> request) async {
+  $async.Future<$20.GetTemplateResponse> getTemplate_Pre($grpc.ServiceCall call,
+      $async.Future<$20.GetTemplateRequest> request) async {
     return getTemplate(call, await request);
   }
 
-  $async.Future<$18.MutateTemplateResponse> mutateTemplate(
-      $grpc.ServiceCall call, $18.MutateTemplateRequest request);
-  $async.Future<$18.ListTemplateResponse> listTemplate(
-      $grpc.ServiceCall call, $18.ListTemplateRequest request);
-  $async.Future<$18.GetTemplateResponse> getTemplate(
-      $grpc.ServiceCall call, $18.GetTemplateRequest request);
+  $async.Future<$20.MutateTemplateResponse> mutateTemplate(
+      $grpc.ServiceCall call, $20.MutateTemplateRequest request);
+  $async.Future<$20.ListTemplateResponse> listTemplate(
+      $grpc.ServiceCall call, $20.ListTemplateRequest request);
+  $async.Future<$20.GetTemplateResponse> getTemplate(
+      $grpc.ServiceCall call, $20.GetTemplateRequest request);
 }

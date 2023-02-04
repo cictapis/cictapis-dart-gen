@@ -10,16 +10,16 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
-import '../../common/v1/paginate.pb.dart' as $26;
-import 'course_timetable_week.pb.dart' as $5;
-import 'exam_schedule.pb.dart' as $6;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
+import '../../common/v1/paginate.pb.dart' as $28;
+import 'course_timetable_week.pb.dart' as $7;
+import 'exam_schedule.pb.dart' as $8;
 
 class MutateCourseRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateCourseRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
     ..pc<MutateCourseOperation>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'operations', $pb.PbFieldType.PM, subBuilder: MutateCourseOperation.create)
     ..aOB(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'partialFailure')
-    ..aOM<$19.FieldMask>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updateMask', subBuilder: $19.FieldMask.create)
+    ..aOM<$21.FieldMask>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updateMask', subBuilder: $21.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -27,7 +27,7 @@ class MutateCourseRequest extends $pb.GeneratedMessage {
   factory MutateCourseRequest({
     $core.Iterable<MutateCourseOperation>? operations,
     $core.bool? partialFailure,
-    $19.FieldMask? updateMask,
+    $21.FieldMask? updateMask,
   }) {
     final _result = create();
     if (operations != null) {
@@ -75,15 +75,15 @@ class MutateCourseRequest extends $pb.GeneratedMessage {
   void clearPartialFailure() => clearField(3);
 
   @$pb.TagNumber(4)
-  $19.FieldMask get updateMask => $_getN(2);
+  $21.FieldMask get updateMask => $_getN(2);
   @$pb.TagNumber(4)
-  set updateMask($19.FieldMask v) { setField(4, v); }
+  set updateMask($21.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(2);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $19.FieldMask ensureUpdateMask() => $_ensure(2);
+  $21.FieldMask ensureUpdateMask() => $_ensure(2);
 }
 
 class MutateCourseOperation extends $pb.GeneratedMessage {
@@ -274,13 +274,13 @@ class GetCourseResponse extends $pb.GeneratedMessage {
 
 class ListCourseRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListCourseRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
-    ..aOM<$26.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $26.Paginate.create)
+    ..aOM<$28.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $28.Paginate.create)
     ..hasRequiredFields = false
   ;
 
   ListCourseRequest._() : super();
   factory ListCourseRequest({
-    $26.Paginate? paginate,
+    $28.Paginate? paginate,
   }) {
     final _result = create();
     if (paginate != null) {
@@ -310,15 +310,15 @@ class ListCourseRequest extends $pb.GeneratedMessage {
   static ListCourseRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $26.Paginate get paginate => $_getN(0);
+  $28.Paginate get paginate => $_getN(0);
   @$pb.TagNumber(1)
-  set paginate($26.Paginate v) { setField(1, v); }
+  set paginate($28.Paginate v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPaginate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPaginate() => clearField(1);
   @$pb.TagNumber(1)
-  $26.Paginate ensurePaginate() => $_ensure(0);
+  $28.Paginate ensurePaginate() => $_ensure(0);
 }
 
 class ListCourseResponse extends $pb.GeneratedMessage {
@@ -433,8 +433,8 @@ class Course extends $pb.GeneratedMessage {
     ..a<$core.int>(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'capacity', $pb.PbFieldType.OU3)
     ..a<$core.int>(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'size', $pb.PbFieldType.OU3)
     ..aOS(8, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseFieldId')
-    ..pc<$5.CourseTimetableWeek>(9, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseTimetableWeeks', $pb.PbFieldType.PM, subBuilder: $5.CourseTimetableWeek.create)
-    ..pc<$6.ExamSchedule>(10, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'examSchedules', $pb.PbFieldType.PM, subBuilder: $6.ExamSchedule.create)
+    ..pc<$7.CourseTimetableWeek>(9, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseTimetableWeeks', $pb.PbFieldType.PM, subBuilder: $7.CourseTimetableWeek.create)
+    ..pc<$8.ExamSchedule>(10, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'examSchedules', $pb.PbFieldType.PM, subBuilder: $8.ExamSchedule.create)
     ..pc<User>(11, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'users', $pb.PbFieldType.PM, subBuilder: User.create)
     ..aInt64(12, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updatedAt')
     ..aInt64(13, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdAt')
@@ -451,8 +451,8 @@ class Course extends $pb.GeneratedMessage {
     $core.int? capacity,
     $core.int? size,
     $core.String? courseFieldId,
-    $core.Iterable<$5.CourseTimetableWeek>? courseTimetableWeeks,
-    $core.Iterable<$6.ExamSchedule>? examSchedules,
+    $core.Iterable<$7.CourseTimetableWeek>? courseTimetableWeeks,
+    $core.Iterable<$8.ExamSchedule>? examSchedules,
     $core.Iterable<User>? users,
     $fixnum.Int64? updatedAt,
     $fixnum.Int64? createdAt,
@@ -593,10 +593,10 @@ class Course extends $pb.GeneratedMessage {
   void clearCourseFieldId() => clearField(8);
 
   @$pb.TagNumber(9)
-  $core.List<$5.CourseTimetableWeek> get courseTimetableWeeks => $_getList(8);
+  $core.List<$7.CourseTimetableWeek> get courseTimetableWeeks => $_getList(8);
 
   @$pb.TagNumber(10)
-  $core.List<$6.ExamSchedule> get examSchedules => $_getList(9);
+  $core.List<$8.ExamSchedule> get examSchedules => $_getList(9);
 
   @$pb.TagNumber(11)
   $core.List<User> get users => $_getList(10);

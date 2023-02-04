@@ -10,7 +10,7 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../common/v1/paginate.pb.dart' as $26;
+import '../../common/v1/paginate.pb.dart' as $28;
 
 enum MutateTemplateRequest_Operation {
   create_1, 
@@ -159,13 +159,13 @@ class MutateTemplateResponse extends $pb.GeneratedMessage {
 
 class ListTemplateRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListTemplateRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_reporter.v1'), createEmptyInstance: create)
-    ..aOM<$26.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $26.Paginate.create)
+    ..aOM<$28.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $28.Paginate.create)
     ..hasRequiredFields = false
   ;
 
   ListTemplateRequest._() : super();
   factory ListTemplateRequest({
-    $26.Paginate? paginate,
+    $28.Paginate? paginate,
   }) {
     final _result = create();
     if (paginate != null) {
@@ -195,15 +195,15 @@ class ListTemplateRequest extends $pb.GeneratedMessage {
   static ListTemplateRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $26.Paginate get paginate => $_getN(0);
+  $28.Paginate get paginate => $_getN(0);
   @$pb.TagNumber(1)
-  set paginate($26.Paginate v) { setField(1, v); }
+  set paginate($28.Paginate v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPaginate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPaginate() => clearField(1);
   @$pb.TagNumber(1)
-  $26.Paginate ensurePaginate() => $_ensure(0);
+  $28.Paginate ensurePaginate() => $_ensure(0);
 }
 
 class ListTemplateResponse extends $pb.GeneratedMessage {

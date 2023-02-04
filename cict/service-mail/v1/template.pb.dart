@@ -10,11 +10,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
-import '../../common/v1/paginate.pb.dart' as $26;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
+import '../../common/v1/paginate.pb.dart' as $28;
 
-import '../../common/v1/enum_mask_behavior.pbenum.dart' as $23;
-import 'enum_built_in_template.pbenum.dart' as $32;
+import '../../common/v1/enum_mask_behavior.pbenum.dart' as $25;
+import 'enum_built_in_template.pbenum.dart' as $35;
 
 class MutateTemplateRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateTemplateRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
@@ -113,16 +113,16 @@ class MutateTemplateRequest extends $pb.GeneratedMessage {
 
 class MutateTemplateCreate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateTemplateCreate', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..pc<Template>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'templates', $pb.PbFieldType.PM, subBuilder: Template.create)
     ..hasRequiredFields = false
   ;
 
   MutateTemplateCreate._() : super();
   factory MutateTemplateCreate({
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
     $core.Iterable<Template>? templates,
   }) {
     final _result = create();
@@ -159,24 +159,24 @@ class MutateTemplateCreate extends $pb.GeneratedMessage {
   static MutateTemplateCreate? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
   @$pb.TagNumber(1)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaskBehavior() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaskBehavior() => clearField(1);
 
   @$pb.TagNumber(2)
-  $19.FieldMask get mask => $_getN(1);
+  $21.FieldMask get mask => $_getN(1);
   @$pb.TagNumber(2)
-  set mask($19.FieldMask v) { setField(2, v); }
+  set mask($21.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearMask() => clearField(2);
   @$pb.TagNumber(2)
-  $19.FieldMask ensureMask() => $_ensure(1);
+  $21.FieldMask ensureMask() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.List<Template> get templates => $_getList(2);
@@ -184,8 +184,8 @@ class MutateTemplateCreate extends $pb.GeneratedMessage {
 
 class MutateTemplateUpdate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateTemplateUpdate', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..aOM<Template>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'template', subBuilder: Template.create)
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'ids')
     ..hasRequiredFields = false
@@ -193,8 +193,8 @@ class MutateTemplateUpdate extends $pb.GeneratedMessage {
 
   MutateTemplateUpdate._() : super();
   factory MutateTemplateUpdate({
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
     Template? template,
     $core.Iterable<$core.String>? ids,
   }) {
@@ -235,24 +235,24 @@ class MutateTemplateUpdate extends $pb.GeneratedMessage {
   static MutateTemplateUpdate? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
   @$pb.TagNumber(1)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaskBehavior() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaskBehavior() => clearField(1);
 
   @$pb.TagNumber(2)
-  $19.FieldMask get mask => $_getN(1);
+  $21.FieldMask get mask => $_getN(1);
   @$pb.TagNumber(2)
-  set mask($19.FieldMask v) { setField(2, v); }
+  set mask($21.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearMask() => clearField(2);
   @$pb.TagNumber(2)
-  $19.FieldMask ensureMask() => $_ensure(1);
+  $21.FieldMask ensureMask() => $_ensure(1);
 
   @$pb.TagNumber(3)
   Template get template => $_getN(2);
@@ -359,16 +359,16 @@ class MutateTemplateResponse extends $pb.GeneratedMessage {
 
 class GetTemplateRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'GetTemplateRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..hasRequiredFields = false
   ;
 
   GetTemplateRequest._() : super();
   factory GetTemplateRequest({
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
     $core.String? id,
   }) {
     final _result = create();
@@ -405,24 +405,24 @@ class GetTemplateRequest extends $pb.GeneratedMessage {
   static GetTemplateRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
   @$pb.TagNumber(1)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaskBehavior() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaskBehavior() => clearField(1);
 
   @$pb.TagNumber(2)
-  $19.FieldMask get mask => $_getN(1);
+  $21.FieldMask get mask => $_getN(1);
   @$pb.TagNumber(2)
-  set mask($19.FieldMask v) { setField(2, v); }
+  set mask($21.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearMask() => clearField(2);
   @$pb.TagNumber(2)
-  $19.FieldMask ensureMask() => $_ensure(1);
+  $21.FieldMask ensureMask() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.String get id => $_getSZ(2);
@@ -485,17 +485,17 @@ class GetTemplateResponse extends $pb.GeneratedMessage {
 
 class ListTemplateRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListTemplateRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
-    ..aOM<$26.Paginate>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $26.Paginate.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
+    ..aOM<$28.Paginate>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $28.Paginate.create)
     ..hasRequiredFields = false
   ;
 
   ListTemplateRequest._() : super();
   factory ListTemplateRequest({
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
-    $26.Paginate? paginate,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
+    $28.Paginate? paginate,
   }) {
     final _result = create();
     if (maskBehavior != null) {
@@ -531,35 +531,35 @@ class ListTemplateRequest extends $pb.GeneratedMessage {
   static ListTemplateRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
   @$pb.TagNumber(1)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaskBehavior() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaskBehavior() => clearField(1);
 
   @$pb.TagNumber(2)
-  $19.FieldMask get mask => $_getN(1);
+  $21.FieldMask get mask => $_getN(1);
   @$pb.TagNumber(2)
-  set mask($19.FieldMask v) { setField(2, v); }
+  set mask($21.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearMask() => clearField(2);
   @$pb.TagNumber(2)
-  $19.FieldMask ensureMask() => $_ensure(1);
+  $21.FieldMask ensureMask() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $26.Paginate get paginate => $_getN(2);
+  $28.Paginate get paginate => $_getN(2);
   @$pb.TagNumber(3)
-  set paginate($26.Paginate v) { setField(3, v); }
+  set paginate($28.Paginate v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasPaginate() => $_has(2);
   @$pb.TagNumber(3)
   void clearPaginate() => clearField(3);
   @$pb.TagNumber(3)
-  $26.Paginate ensurePaginate() => $_ensure(2);
+  $28.Paginate ensurePaginate() => $_ensure(2);
 }
 
 class ListTemplateResponse extends $pb.GeneratedMessage {
@@ -609,7 +609,7 @@ class Template extends $pb.GeneratedMessage {
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'subject')
     ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'content')
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'attachedFiles')
-    ..e<$32.EnumBuiltInTemplate_BuiltInTemplate>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'builtInTemplate', $pb.PbFieldType.OE, defaultOrMaker: $32.EnumBuiltInTemplate_BuiltInTemplate.UNSPECIFIED, valueOf: $32.EnumBuiltInTemplate_BuiltInTemplate.valueOf, enumValues: $32.EnumBuiltInTemplate_BuiltInTemplate.values)
+    ..e<$35.EnumBuiltInTemplate_BuiltInTemplate>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'builtInTemplate', $pb.PbFieldType.OE, defaultOrMaker: $35.EnumBuiltInTemplate_BuiltInTemplate.UNSPECIFIED, valueOf: $35.EnumBuiltInTemplate_BuiltInTemplate.valueOf, enumValues: $35.EnumBuiltInTemplate_BuiltInTemplate.values)
     ..aInt64(100, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updatedAt')
     ..aInt64(101, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdAt')
     ..aOS(102, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdById')
@@ -625,7 +625,7 @@ class Template extends $pb.GeneratedMessage {
     $core.String? subject,
     $core.String? content,
     $core.String? attachedFiles,
-    $32.EnumBuiltInTemplate_BuiltInTemplate? builtInTemplate,
+    $35.EnumBuiltInTemplate_BuiltInTemplate? builtInTemplate,
     $fixnum.Int64? updatedAt,
     $fixnum.Int64? createdAt,
     $core.String? createdById,
@@ -727,9 +727,9 @@ class Template extends $pb.GeneratedMessage {
   void clearAttachedFiles() => clearField(4);
 
   @$pb.TagNumber(5)
-  $32.EnumBuiltInTemplate_BuiltInTemplate get builtInTemplate => $_getN(4);
+  $35.EnumBuiltInTemplate_BuiltInTemplate get builtInTemplate => $_getN(4);
   @$pb.TagNumber(5)
-  set builtInTemplate($32.EnumBuiltInTemplate_BuiltInTemplate v) { setField(5, v); }
+  set builtInTemplate($35.EnumBuiltInTemplate_BuiltInTemplate v) { setField(5, v); }
   @$pb.TagNumber(5)
   $core.bool hasBuiltInTemplate() => $_has(4);
   @$pb.TagNumber(5)

@@ -9,17 +9,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../common/v1/annotations.pb.dart' as $28;
-import 'role_accessibility.pb.dart' as $29;
-import 'workspace_user.pb.dart' as $1;
+import '../../common/v1/annotations.pb.dart' as $30;
+import 'role_accessibility.pb.dart' as $31;
+import 'user.pb.dart' as $1;
+import 'workspace.pb.dart' as $3;
+import 'scope.pb.dart' as $0;
 
-import 'enum_scope.pbenum.dart' as $24;
+import 'enum_scope.pbenum.dart' as $26;
 
 class AuthenticateSessionRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AuthenticateSessionRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'sessionId')
-    ..aOM<$28.AnnotationsCictMethodOptions>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'cictAnnotations', subBuilder: $28.AnnotationsCictMethodOptions.create)
-    ..e<$24.EnumScope_Scope>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $24.EnumScope_Scope.UNSPECIFIED, valueOf: $24.EnumScope_Scope.valueOf, enumValues: $24.EnumScope_Scope.values)
+    ..aOM<$30.AnnotationsCictMethodOptions>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'cictAnnotations', subBuilder: $30.AnnotationsCictMethodOptions.create)
+    ..e<$26.EnumScope_Scope>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $26.EnumScope_Scope.UNSPECIFIED, valueOf: $26.EnumScope_Scope.valueOf, enumValues: $26.EnumScope_Scope.values)
     ..aOS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'workspaceId')
     ..hasRequiredFields = false
   ;
@@ -27,8 +29,8 @@ class AuthenticateSessionRequest extends $pb.GeneratedMessage {
   AuthenticateSessionRequest._() : super();
   factory AuthenticateSessionRequest({
     $core.String? sessionId,
-    $28.AnnotationsCictMethodOptions? cictAnnotations,
-    $24.EnumScope_Scope? scope,
+    $30.AnnotationsCictMethodOptions? cictAnnotations,
+    $26.EnumScope_Scope? scope,
     $core.String? workspaceId,
   }) {
     final _result = create();
@@ -77,20 +79,20 @@ class AuthenticateSessionRequest extends $pb.GeneratedMessage {
   void clearSessionId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $28.AnnotationsCictMethodOptions get cictAnnotations => $_getN(1);
+  $30.AnnotationsCictMethodOptions get cictAnnotations => $_getN(1);
   @$pb.TagNumber(2)
-  set cictAnnotations($28.AnnotationsCictMethodOptions v) { setField(2, v); }
+  set cictAnnotations($30.AnnotationsCictMethodOptions v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasCictAnnotations() => $_has(1);
   @$pb.TagNumber(2)
   void clearCictAnnotations() => clearField(2);
   @$pb.TagNumber(2)
-  $28.AnnotationsCictMethodOptions ensureCictAnnotations() => $_ensure(1);
+  $30.AnnotationsCictMethodOptions ensureCictAnnotations() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $24.EnumScope_Scope get scope => $_getN(2);
+  $26.EnumScope_Scope get scope => $_getN(2);
   @$pb.TagNumber(3)
-  set scope($24.EnumScope_Scope v) { setField(3, v); }
+  set scope($26.EnumScope_Scope v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasScope() => $_has(2);
   @$pb.TagNumber(3)
@@ -109,14 +111,14 @@ class AuthenticateSessionRequest extends $pb.GeneratedMessage {
 class AuthenticateSessionResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AuthenticateSessionResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
     ..aOM<Session>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'session', subBuilder: Session.create)
-    ..aOM<$29.RoleAccessibility>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'roleAccessibility', subBuilder: $29.RoleAccessibility.create)
+    ..aOM<$31.RoleAccessibility>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'roleAccessibility', subBuilder: $31.RoleAccessibility.create)
     ..hasRequiredFields = false
   ;
 
   AuthenticateSessionResponse._() : super();
   factory AuthenticateSessionResponse({
     Session? session,
-    $29.RoleAccessibility? roleAccessibility,
+    $31.RoleAccessibility? roleAccessibility,
   }) {
     final _result = create();
     if (session != null) {
@@ -160,21 +162,23 @@ class AuthenticateSessionResponse extends $pb.GeneratedMessage {
   Session ensureSession() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $29.RoleAccessibility get roleAccessibility => $_getN(1);
+  $31.RoleAccessibility get roleAccessibility => $_getN(1);
   @$pb.TagNumber(2)
-  set roleAccessibility($29.RoleAccessibility v) { setField(2, v); }
+  set roleAccessibility($31.RoleAccessibility v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasRoleAccessibility() => $_has(1);
   @$pb.TagNumber(2)
   void clearRoleAccessibility() => clearField(2);
   @$pb.TagNumber(2)
-  $29.RoleAccessibility ensureRoleAccessibility() => $_ensure(1);
+  $31.RoleAccessibility ensureRoleAccessibility() => $_ensure(1);
 }
 
 class Session extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Session', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOM<$1.User>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'user', subBuilder: $1.User.create)
+    ..pc<$3.Workspace>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'workspaces', $pb.PbFieldType.PM, subBuilder: $3.Workspace.create)
+    ..pc<$0.Scope>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scopes', $pb.PbFieldType.PM, subBuilder: $0.Scope.create)
     ..hasRequiredFields = false
   ;
 
@@ -182,6 +186,8 @@ class Session extends $pb.GeneratedMessage {
   factory Session({
     $core.String? id,
     $1.User? user,
+    $core.Iterable<$3.Workspace>? workspaces,
+    $core.Iterable<$0.Scope>? scopes,
   }) {
     final _result = create();
     if (id != null) {
@@ -189,6 +195,12 @@ class Session extends $pb.GeneratedMessage {
     }
     if (user != null) {
       _result.user = user;
+    }
+    if (workspaces != null) {
+      _result.workspaces.addAll(workspaces);
+    }
+    if (scopes != null) {
+      _result.scopes.addAll(scopes);
     }
     return _result;
   }
@@ -232,5 +244,11 @@ class Session extends $pb.GeneratedMessage {
   void clearUser() => clearField(2);
   @$pb.TagNumber(2)
   $1.User ensureUser() => $_ensure(1);
+
+  @$pb.TagNumber(3)
+  $core.List<$3.Workspace> get workspaces => $_getList(2);
+
+  @$pb.TagNumber(4)
+  $core.List<$0.Scope> get scopes => $_getList(3);
 }
 

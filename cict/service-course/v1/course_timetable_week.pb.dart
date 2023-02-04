@@ -10,9 +10,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
-import '../../common/v1/paginate.pb.dart' as $26;
-import 'course_timetable_day.pb.dart' as $4;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
+import '../../common/v1/paginate.pb.dart' as $28;
+import 'course_timetable_day.pb.dart' as $6;
 
 enum MutateCourseTimetableWeekRequest_Operation {
   create_1, 
@@ -33,7 +33,7 @@ class MutateCourseTimetableWeekRequest extends $pb.GeneratedMessage {
     ..aOM<CourseTimetableWeek>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'create', subBuilder: CourseTimetableWeek.create)
     ..aOM<CourseTimetableWeek>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'update', subBuilder: CourseTimetableWeek.create)
     ..aOM<CourseTimetableWeek>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'delete', subBuilder: CourseTimetableWeek.create)
-    ..aOM<$19.FieldMask>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updateMask', subBuilder: $19.FieldMask.create)
+    ..aOM<$21.FieldMask>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updateMask', subBuilder: $21.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
@@ -42,7 +42,7 @@ class MutateCourseTimetableWeekRequest extends $pb.GeneratedMessage {
     CourseTimetableWeek? create_1,
     CourseTimetableWeek? update,
     CourseTimetableWeek? delete,
-    $19.FieldMask? updateMask,
+    $21.FieldMask? updateMask,
   }) {
     final _result = create();
     if (create_1 != null) {
@@ -117,15 +117,15 @@ class MutateCourseTimetableWeekRequest extends $pb.GeneratedMessage {
   CourseTimetableWeek ensureDelete() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $19.FieldMask get updateMask => $_getN(3);
+  $21.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($19.FieldMask v) { setField(4, v); }
+  set updateMask($21.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $19.FieldMask ensureUpdateMask() => $_ensure(3);
+  $21.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 class MutateCourseTimetableWeekResponse extends $pb.GeneratedMessage {
@@ -273,13 +273,13 @@ class GetCourseTimetableWeekResponse extends $pb.GeneratedMessage {
 
 class ListCourseTimetableWeekRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListCourseTimetableWeekRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
-    ..aOM<$26.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $26.Paginate.create)
+    ..aOM<$28.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $28.Paginate.create)
     ..hasRequiredFields = false
   ;
 
   ListCourseTimetableWeekRequest._() : super();
   factory ListCourseTimetableWeekRequest({
-    $26.Paginate? paginate,
+    $28.Paginate? paginate,
   }) {
     final _result = create();
     if (paginate != null) {
@@ -309,15 +309,15 @@ class ListCourseTimetableWeekRequest extends $pb.GeneratedMessage {
   static ListCourseTimetableWeekRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $26.Paginate get paginate => $_getN(0);
+  $28.Paginate get paginate => $_getN(0);
   @$pb.TagNumber(1)
-  set paginate($26.Paginate v) { setField(1, v); }
+  set paginate($28.Paginate v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPaginate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPaginate() => clearField(1);
   @$pb.TagNumber(1)
-  $26.Paginate ensurePaginate() => $_ensure(0);
+  $28.Paginate ensurePaginate() => $_ensure(0);
 }
 
 class ListCourseTimetableWeekResponse extends $pb.GeneratedMessage {
@@ -367,7 +367,7 @@ class CourseTimetableWeek extends $pb.GeneratedMessage {
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseId')
     ..a<$core.int>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'week', $pb.PbFieldType.OU3)
     ..aOB(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'active')
-    ..pc<$4.CourseTimetableDay>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseTimetableDays', $pb.PbFieldType.PM, subBuilder: $4.CourseTimetableDay.create)
+    ..pc<$6.CourseTimetableDay>(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseTimetableDays', $pb.PbFieldType.PM, subBuilder: $6.CourseTimetableDay.create)
     ..aInt64(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updatedAt')
     ..aInt64(7, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdAt')
     ..hasRequiredFields = false
@@ -379,7 +379,7 @@ class CourseTimetableWeek extends $pb.GeneratedMessage {
     $core.String? courseId,
     $core.int? week,
     $core.bool? active,
-    $core.Iterable<$4.CourseTimetableDay>? courseTimetableDays,
+    $core.Iterable<$6.CourseTimetableDay>? courseTimetableDays,
     $fixnum.Int64? updatedAt,
     $fixnum.Int64? createdAt,
   }) {
@@ -465,7 +465,7 @@ class CourseTimetableWeek extends $pb.GeneratedMessage {
   void clearActive() => clearField(4);
 
   @$pb.TagNumber(5)
-  $core.List<$4.CourseTimetableDay> get courseTimetableDays => $_getList(4);
+  $core.List<$6.CourseTimetableDay> get courseTimetableDays => $_getList(4);
 
   @$pb.TagNumber(6)
   $fixnum.Int64 get updatedAt => $_getI64(5);

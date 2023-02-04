@@ -20,6 +20,12 @@ class ScopeServiceClient extends $grpc.Client {
           ($0.MutateScopeRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
               $0.MutateScopeResponse.fromBuffer(value));
+  static final _$listScope =
+      $grpc.ClientMethod<$0.ListScopeRequest, $0.ListScopeResponse>(
+          '/cict.service_auth.v1.ScopeService/ListScope',
+          ($0.ListScopeRequest value) => value.writeToBuffer(),
+          ($core.List<$core.int> value) =>
+              $0.ListScopeResponse.fromBuffer(value));
 
   ScopeServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
@@ -30,6 +36,12 @@ class ScopeServiceClient extends $grpc.Client {
       $0.MutateScopeRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$mutateScope, request, options: options);
+  }
+
+  $grpc.ResponseFuture<$0.ListScopeResponse> listScope(
+      $0.ListScopeRequest request,
+      {$grpc.CallOptions? options}) {
+    return $createUnaryCall(_$listScope, request, options: options);
   }
 }
 
@@ -46,6 +58,13 @@ abstract class ScopeServiceBase extends $grpc.Service {
             ($core.List<$core.int> value) =>
                 $0.MutateScopeRequest.fromBuffer(value),
             ($0.MutateScopeResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$0.ListScopeRequest, $0.ListScopeResponse>(
+        'ListScope',
+        listScope_Pre,
+        false,
+        false,
+        ($core.List<$core.int> value) => $0.ListScopeRequest.fromBuffer(value),
+        ($0.ListScopeResponse value) => value.writeToBuffer()));
   }
 
   $async.Future<$0.MutateScopeResponse> mutateScope_Pre($grpc.ServiceCall call,
@@ -53,6 +72,13 @@ abstract class ScopeServiceBase extends $grpc.Service {
     return mutateScope(call, await request);
   }
 
+  $async.Future<$0.ListScopeResponse> listScope_Pre($grpc.ServiceCall call,
+      $async.Future<$0.ListScopeRequest> request) async {
+    return listScope(call, await request);
+  }
+
   $async.Future<$0.MutateScopeResponse> mutateScope(
       $grpc.ServiceCall call, $0.MutateScopeRequest request);
+  $async.Future<$0.ListScopeResponse> listScope(
+      $grpc.ServiceCall call, $0.ListScopeRequest request);
 }

@@ -10,11 +10,11 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
 
-import '../../common/v1/enum_mask_behavior.pbenum.dart' as $23;
-import 'enum_scope.pbenum.dart' as $24;
-import 'enum_scope_role.pbenum.dart' as $25;
+import '../../common/v1/enum_mask_behavior.pbenum.dart' as $25;
+import 'enum_scope.pbenum.dart' as $26;
+import 'enum_scope_role.pbenum.dart' as $27;
 
 class MutateScopeRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateScopeRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
@@ -127,16 +127,16 @@ class MutateScopeRequest extends $pb.GeneratedMessage {
 
 class MutateScopeCreate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateScopeCreate', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..pc<Scope>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scopes', $pb.PbFieldType.PM, subBuilder: Scope.create)
     ..hasRequiredFields = false
   ;
 
   MutateScopeCreate._() : super();
   factory MutateScopeCreate({
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
     $core.Iterable<Scope>? scopes,
   }) {
     final _result = create();
@@ -173,24 +173,24 @@ class MutateScopeCreate extends $pb.GeneratedMessage {
   static MutateScopeCreate? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
   @$pb.TagNumber(1)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaskBehavior() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaskBehavior() => clearField(1);
 
   @$pb.TagNumber(2)
-  $19.FieldMask get mask => $_getN(1);
+  $21.FieldMask get mask => $_getN(1);
   @$pb.TagNumber(2)
-  set mask($19.FieldMask v) { setField(2, v); }
+  set mask($21.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearMask() => clearField(2);
   @$pb.TagNumber(2)
-  $19.FieldMask ensureMask() => $_ensure(1);
+  $21.FieldMask ensureMask() => $_ensure(1);
 
   @$pb.TagNumber(3)
   $core.List<Scope> get scopes => $_getList(2);
@@ -198,8 +198,8 @@ class MutateScopeCreate extends $pb.GeneratedMessage {
 
 class MutateScopeUpdate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateScopeUpdate', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
-    ..e<$23.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $23.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $23.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $23.EnumMaskBehavior_MaskBehavior.values)
-    ..aOM<$19.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $19.FieldMask.create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
     ..aOM<Scope>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scope', subBuilder: Scope.create)
     ..pPS(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'ids')
     ..hasRequiredFields = false
@@ -207,8 +207,8 @@ class MutateScopeUpdate extends $pb.GeneratedMessage {
 
   MutateScopeUpdate._() : super();
   factory MutateScopeUpdate({
-    $23.EnumMaskBehavior_MaskBehavior? maskBehavior,
-    $19.FieldMask? mask,
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
     Scope? scope,
     $core.Iterable<$core.String>? ids,
   }) {
@@ -249,24 +249,24 @@ class MutateScopeUpdate extends $pb.GeneratedMessage {
   static MutateScopeUpdate? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $23.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
   @$pb.TagNumber(1)
-  set maskBehavior($23.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasMaskBehavior() => $_has(0);
   @$pb.TagNumber(1)
   void clearMaskBehavior() => clearField(1);
 
   @$pb.TagNumber(2)
-  $19.FieldMask get mask => $_getN(1);
+  $21.FieldMask get mask => $_getN(1);
   @$pb.TagNumber(2)
-  set mask($19.FieldMask v) { setField(2, v); }
+  set mask($21.FieldMask v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasMask() => $_has(1);
   @$pb.TagNumber(2)
   void clearMask() => clearField(2);
   @$pb.TagNumber(2)
-  $19.FieldMask ensureMask() => $_ensure(1);
+  $21.FieldMask ensureMask() => $_ensure(1);
 
   @$pb.TagNumber(3)
   Scope get scope => $_getN(2);
@@ -371,11 +371,129 @@ class MutateScopeResponse extends $pb.GeneratedMessage {
   void clearAffectedRows() => clearField(1);
 }
 
+class ListScopeRequest extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListScopeRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
+    ..e<$25.EnumMaskBehavior_MaskBehavior>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'maskBehavior', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumMaskBehavior_MaskBehavior.UNSPECIFIED, valueOf: $25.EnumMaskBehavior_MaskBehavior.valueOf, enumValues: $25.EnumMaskBehavior_MaskBehavior.values)
+    ..aOM<$21.FieldMask>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'mask', subBuilder: $21.FieldMask.create)
+    ..aOS(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'userId')
+    ..hasRequiredFields = false
+  ;
+
+  ListScopeRequest._() : super();
+  factory ListScopeRequest({
+    $25.EnumMaskBehavior_MaskBehavior? maskBehavior,
+    $21.FieldMask? mask,
+    $core.String? userId,
+  }) {
+    final _result = create();
+    if (maskBehavior != null) {
+      _result.maskBehavior = maskBehavior;
+    }
+    if (mask != null) {
+      _result.mask = mask;
+    }
+    if (userId != null) {
+      _result.userId = userId;
+    }
+    return _result;
+  }
+  factory ListScopeRequest.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ListScopeRequest.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ListScopeRequest clone() => ListScopeRequest()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ListScopeRequest copyWith(void Function(ListScopeRequest) updates) => super.copyWith((message) => updates(message as ListScopeRequest)) as ListScopeRequest; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static ListScopeRequest create() => ListScopeRequest._();
+  ListScopeRequest createEmptyInstance() => create();
+  static $pb.PbList<ListScopeRequest> createRepeated() => $pb.PbList<ListScopeRequest>();
+  @$core.pragma('dart2js:noInline')
+  static ListScopeRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListScopeRequest>(create);
+  static ListScopeRequest? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $25.EnumMaskBehavior_MaskBehavior get maskBehavior => $_getN(0);
+  @$pb.TagNumber(1)
+  set maskBehavior($25.EnumMaskBehavior_MaskBehavior v) { setField(1, v); }
+  @$pb.TagNumber(1)
+  $core.bool hasMaskBehavior() => $_has(0);
+  @$pb.TagNumber(1)
+  void clearMaskBehavior() => clearField(1);
+
+  @$pb.TagNumber(2)
+  $21.FieldMask get mask => $_getN(1);
+  @$pb.TagNumber(2)
+  set mask($21.FieldMask v) { setField(2, v); }
+  @$pb.TagNumber(2)
+  $core.bool hasMask() => $_has(1);
+  @$pb.TagNumber(2)
+  void clearMask() => clearField(2);
+  @$pb.TagNumber(2)
+  $21.FieldMask ensureMask() => $_ensure(1);
+
+  @$pb.TagNumber(3)
+  $core.String get userId => $_getSZ(2);
+  @$pb.TagNumber(3)
+  set userId($core.String v) { $_setString(2, v); }
+  @$pb.TagNumber(3)
+  $core.bool hasUserId() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearUserId() => clearField(3);
+}
+
+class ListScopeResponse extends $pb.GeneratedMessage {
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListScopeResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
+    ..pc<Scope>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scopes', $pb.PbFieldType.PM, subBuilder: Scope.create)
+    ..hasRequiredFields = false
+  ;
+
+  ListScopeResponse._() : super();
+  factory ListScopeResponse({
+    $core.Iterable<Scope>? scopes,
+  }) {
+    final _result = create();
+    if (scopes != null) {
+      _result.scopes.addAll(scopes);
+    }
+    return _result;
+  }
+  factory ListScopeResponse.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
+  factory ListScopeResponse.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+  'Will be removed in next major version')
+  ListScopeResponse clone() => ListScopeResponse()..mergeFromMessage(this);
+  @$core.Deprecated(
+  'Using this can add significant overhead to your binary. '
+  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+  'Will be removed in next major version')
+  ListScopeResponse copyWith(void Function(ListScopeResponse) updates) => super.copyWith((message) => updates(message as ListScopeResponse)) as ListScopeResponse; // ignore: deprecated_member_use
+  $pb.BuilderInfo get info_ => _i;
+  @$core.pragma('dart2js:noInline')
+  static ListScopeResponse create() => ListScopeResponse._();
+  ListScopeResponse createEmptyInstance() => create();
+  static $pb.PbList<ListScopeResponse> createRepeated() => $pb.PbList<ListScopeResponse>();
+  @$core.pragma('dart2js:noInline')
+  static ListScopeResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListScopeResponse>(create);
+  static ListScopeResponse? _defaultInstance;
+
+  @$pb.TagNumber(1)
+  $core.List<Scope> get scopes => $_getList(0);
+}
+
 class Scope extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Scope', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
-    ..e<$24.EnumScope_Scope>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $24.EnumScope_Scope.UNSPECIFIED, valueOf: $24.EnumScope_Scope.valueOf, enumValues: $24.EnumScope_Scope.values)
-    ..e<$25.EnumScopeRole_ScopeRole>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'role', $pb.PbFieldType.OE, defaultOrMaker: $25.EnumScopeRole_ScopeRole.UNSPECIFIED, valueOf: $25.EnumScopeRole_ScopeRole.valueOf, enumValues: $25.EnumScopeRole_ScopeRole.values)
+    ..e<$26.EnumScope_Scope>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'scope', $pb.PbFieldType.OE, defaultOrMaker: $26.EnumScope_Scope.UNSPECIFIED, valueOf: $26.EnumScope_Scope.valueOf, enumValues: $26.EnumScope_Scope.values)
+    ..e<$27.EnumScopeRole_ScopeRole>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'role', $pb.PbFieldType.OE, defaultOrMaker: $27.EnumScopeRole_ScopeRole.UNSPECIFIED, valueOf: $27.EnumScopeRole_ScopeRole.valueOf, enumValues: $27.EnumScopeRole_ScopeRole.values)
     ..aInt64(100, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updatedAt')
     ..aInt64(101, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdAt')
     ..aOS(102, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdById')
@@ -388,8 +506,8 @@ class Scope extends $pb.GeneratedMessage {
   Scope._() : super();
   factory Scope({
     $core.String? id,
-    $24.EnumScope_Scope? scope,
-    $25.EnumScopeRole_ScopeRole? role,
+    $26.EnumScope_Scope? scope,
+    $27.EnumScopeRole_ScopeRole? role,
     $fixnum.Int64? updatedAt,
     $fixnum.Int64? createdAt,
     $core.String? createdById,
@@ -458,18 +576,18 @@ class Scope extends $pb.GeneratedMessage {
   void clearId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $24.EnumScope_Scope get scope => $_getN(1);
+  $26.EnumScope_Scope get scope => $_getN(1);
   @$pb.TagNumber(2)
-  set scope($24.EnumScope_Scope v) { setField(2, v); }
+  set scope($26.EnumScope_Scope v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasScope() => $_has(1);
   @$pb.TagNumber(2)
   void clearScope() => clearField(2);
 
   @$pb.TagNumber(3)
-  $25.EnumScopeRole_ScopeRole get role => $_getN(2);
+  $27.EnumScopeRole_ScopeRole get role => $_getN(2);
   @$pb.TagNumber(3)
-  set role($25.EnumScopeRole_ScopeRole v) { setField(3, v); }
+  set role($27.EnumScopeRole_ScopeRole v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasRole() => $_has(2);
   @$pb.TagNumber(3)

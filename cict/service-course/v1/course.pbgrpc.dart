@@ -10,33 +10,33 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'course.pb.dart' as $7;
+import 'course.pb.dart' as $9;
 import '../../../google/protobuf/empty.pb.dart' as $2;
 export 'course.pb.dart';
 
 class CourseServiceClient extends $grpc.Client {
   static final _$mutateCourse =
-      $grpc.ClientMethod<$7.MutateCourseRequest, $7.MutateCourseResponse>(
+      $grpc.ClientMethod<$9.MutateCourseRequest, $9.MutateCourseResponse>(
           '/cict.service_course.v1.CourseService/MutateCourse',
-          ($7.MutateCourseRequest value) => value.writeToBuffer(),
+          ($9.MutateCourseRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $7.MutateCourseResponse.fromBuffer(value));
+              $9.MutateCourseResponse.fromBuffer(value));
   static final _$getCourse =
-      $grpc.ClientMethod<$7.GetCourseRequest, $7.GetCourseResponse>(
+      $grpc.ClientMethod<$9.GetCourseRequest, $9.GetCourseResponse>(
           '/cict.service_course.v1.CourseService/GetCourse',
-          ($7.GetCourseRequest value) => value.writeToBuffer(),
+          ($9.GetCourseRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $7.GetCourseResponse.fromBuffer(value));
+              $9.GetCourseResponse.fromBuffer(value));
   static final _$listCourse =
-      $grpc.ClientMethod<$7.ListCourseRequest, $7.ListCourseResponse>(
+      $grpc.ClientMethod<$9.ListCourseRequest, $9.ListCourseResponse>(
           '/cict.service_course.v1.CourseService/ListCourse',
-          ($7.ListCourseRequest value) => value.writeToBuffer(),
+          ($9.ListCourseRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) =>
-              $7.ListCourseResponse.fromBuffer(value));
+              $9.ListCourseResponse.fromBuffer(value));
   static final _$registerCourse =
-      $grpc.ClientMethod<$7.RegisterCourseRequest, $2.Empty>(
+      $grpc.ClientMethod<$9.RegisterCourseRequest, $2.Empty>(
           '/cict.service_course.v1.CourseService/RegisterCourse',
-          ($7.RegisterCourseRequest value) => value.writeToBuffer(),
+          ($9.RegisterCourseRequest value) => value.writeToBuffer(),
           ($core.List<$core.int> value) => $2.Empty.fromBuffer(value));
 
   CourseServiceClient($grpc.ClientChannel channel,
@@ -44,26 +44,26 @@ class CourseServiceClient extends $grpc.Client {
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$7.MutateCourseResponse> mutateCourse(
-      $7.MutateCourseRequest request,
+  $grpc.ResponseFuture<$9.MutateCourseResponse> mutateCourse(
+      $9.MutateCourseRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$mutateCourse, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.GetCourseResponse> getCourse(
-      $7.GetCourseRequest request,
+  $grpc.ResponseFuture<$9.GetCourseResponse> getCourse(
+      $9.GetCourseRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getCourse, request, options: options);
   }
 
-  $grpc.ResponseFuture<$7.ListCourseResponse> listCourse(
-      $7.ListCourseRequest request,
+  $grpc.ResponseFuture<$9.ListCourseResponse> listCourse(
+      $9.ListCourseRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listCourse, request, options: options);
   }
 
   $grpc.ResponseFuture<$2.Empty> registerCourse(
-      $7.RegisterCourseRequest request,
+      $9.RegisterCourseRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$registerCourse, request, options: options);
   }
@@ -74,65 +74,65 @@ abstract class CourseServiceBase extends $grpc.Service {
 
   CourseServiceBase() {
     $addMethod(
-        $grpc.ServiceMethod<$7.MutateCourseRequest, $7.MutateCourseResponse>(
+        $grpc.ServiceMethod<$9.MutateCourseRequest, $9.MutateCourseResponse>(
             'MutateCourse',
             mutateCourse_Pre,
             false,
             false,
             ($core.List<$core.int> value) =>
-                $7.MutateCourseRequest.fromBuffer(value),
-            ($7.MutateCourseResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$7.GetCourseRequest, $7.GetCourseResponse>(
+                $9.MutateCourseRequest.fromBuffer(value),
+            ($9.MutateCourseResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$9.GetCourseRequest, $9.GetCourseResponse>(
         'GetCourse',
         getCourse_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $7.GetCourseRequest.fromBuffer(value),
-        ($7.GetCourseResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$7.ListCourseRequest, $7.ListCourseResponse>(
+        ($core.List<$core.int> value) => $9.GetCourseRequest.fromBuffer(value),
+        ($9.GetCourseResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$9.ListCourseRequest, $9.ListCourseResponse>(
         'ListCourse',
         listCourse_Pre,
         false,
         false,
-        ($core.List<$core.int> value) => $7.ListCourseRequest.fromBuffer(value),
-        ($7.ListCourseResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$7.RegisterCourseRequest, $2.Empty>(
+        ($core.List<$core.int> value) => $9.ListCourseRequest.fromBuffer(value),
+        ($9.ListCourseResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$9.RegisterCourseRequest, $2.Empty>(
         'RegisterCourse',
         registerCourse_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $7.RegisterCourseRequest.fromBuffer(value),
+            $9.RegisterCourseRequest.fromBuffer(value),
         ($2.Empty value) => value.writeToBuffer()));
   }
 
-  $async.Future<$7.MutateCourseResponse> mutateCourse_Pre(
+  $async.Future<$9.MutateCourseResponse> mutateCourse_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$7.MutateCourseRequest> request) async {
+      $async.Future<$9.MutateCourseRequest> request) async {
     return mutateCourse(call, await request);
   }
 
-  $async.Future<$7.GetCourseResponse> getCourse_Pre($grpc.ServiceCall call,
-      $async.Future<$7.GetCourseRequest> request) async {
+  $async.Future<$9.GetCourseResponse> getCourse_Pre($grpc.ServiceCall call,
+      $async.Future<$9.GetCourseRequest> request) async {
     return getCourse(call, await request);
   }
 
-  $async.Future<$7.ListCourseResponse> listCourse_Pre($grpc.ServiceCall call,
-      $async.Future<$7.ListCourseRequest> request) async {
+  $async.Future<$9.ListCourseResponse> listCourse_Pre($grpc.ServiceCall call,
+      $async.Future<$9.ListCourseRequest> request) async {
     return listCourse(call, await request);
   }
 
   $async.Future<$2.Empty> registerCourse_Pre($grpc.ServiceCall call,
-      $async.Future<$7.RegisterCourseRequest> request) async {
+      $async.Future<$9.RegisterCourseRequest> request) async {
     return registerCourse(call, await request);
   }
 
-  $async.Future<$7.MutateCourseResponse> mutateCourse(
-      $grpc.ServiceCall call, $7.MutateCourseRequest request);
-  $async.Future<$7.GetCourseResponse> getCourse(
-      $grpc.ServiceCall call, $7.GetCourseRequest request);
-  $async.Future<$7.ListCourseResponse> listCourse(
-      $grpc.ServiceCall call, $7.ListCourseRequest request);
+  $async.Future<$9.MutateCourseResponse> mutateCourse(
+      $grpc.ServiceCall call, $9.MutateCourseRequest request);
+  $async.Future<$9.GetCourseResponse> getCourse(
+      $grpc.ServiceCall call, $9.GetCourseRequest request);
+  $async.Future<$9.ListCourseResponse> listCourse(
+      $grpc.ServiceCall call, $9.ListCourseRequest request);
   $async.Future<$2.Empty> registerCourse(
-      $grpc.ServiceCall call, $7.RegisterCourseRequest request);
+      $grpc.ServiceCall call, $9.RegisterCourseRequest request);
 }

@@ -9,7 +9,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'enum_built_in_template.pbenum.dart' as $32;
+import 'enum_built_in_template.pbenum.dart' as $35;
 
 class SendContentMailRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'SendContentMailRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
@@ -226,14 +226,14 @@ class SendTemplateMailByTemplateId extends $pb.GeneratedMessage {
 class SendTemplateMailByBuiltInTemplate extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'SendTemplateMailByBuiltInTemplate', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
     ..pPS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'dstMailAddress')
-    ..e<$32.EnumBuiltInTemplate_BuiltInTemplate>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'builtInTemplate', $pb.PbFieldType.OE, defaultOrMaker: $32.EnumBuiltInTemplate_BuiltInTemplate.UNSPECIFIED, valueOf: $32.EnumBuiltInTemplate_BuiltInTemplate.valueOf, enumValues: $32.EnumBuiltInTemplate_BuiltInTemplate.values)
+    ..e<$35.EnumBuiltInTemplate_BuiltInTemplate>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'builtInTemplate', $pb.PbFieldType.OE, defaultOrMaker: $35.EnumBuiltInTemplate_BuiltInTemplate.UNSPECIFIED, valueOf: $35.EnumBuiltInTemplate_BuiltInTemplate.valueOf, enumValues: $35.EnumBuiltInTemplate_BuiltInTemplate.values)
     ..hasRequiredFields = false
   ;
 
   SendTemplateMailByBuiltInTemplate._() : super();
   factory SendTemplateMailByBuiltInTemplate({
     $core.Iterable<$core.String>? dstMailAddress,
-    $32.EnumBuiltInTemplate_BuiltInTemplate? builtInTemplate,
+    $35.EnumBuiltInTemplate_BuiltInTemplate? builtInTemplate,
   }) {
     final _result = create();
     if (dstMailAddress != null) {
@@ -269,9 +269,9 @@ class SendTemplateMailByBuiltInTemplate extends $pb.GeneratedMessage {
   $core.List<$core.String> get dstMailAddress => $_getList(0);
 
   @$pb.TagNumber(3)
-  $32.EnumBuiltInTemplate_BuiltInTemplate get builtInTemplate => $_getN(1);
+  $35.EnumBuiltInTemplate_BuiltInTemplate get builtInTemplate => $_getN(1);
   @$pb.TagNumber(3)
-  set builtInTemplate($32.EnumBuiltInTemplate_BuiltInTemplate v) { setField(3, v); }
+  set builtInTemplate($35.EnumBuiltInTemplate_BuiltInTemplate v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasBuiltInTemplate() => $_has(1);
   @$pb.TagNumber(3)

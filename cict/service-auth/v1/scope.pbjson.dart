@@ -69,6 +69,29 @@ const MutateScopeResponse$json = const {
 
 /// Descriptor for `MutateScopeResponse`. Decode as a `google.protobuf.DescriptorProto`.
 final $typed_data.Uint8List mutateScopeResponseDescriptor = $convert.base64Decode('ChNNdXRhdGVTY29wZVJlc3BvbnNlEiMKDWFmZmVjdGVkX3Jvd3MYASABKANSDGFmZmVjdGVkUm93cw==');
+@$core.Deprecated('Use listScopeRequestDescriptor instead')
+const ListScopeRequest$json = const {
+  '1': 'ListScopeRequest',
+  '2': const [
+    const {'1': 'mask_behavior', '3': 1, '4': 1, '5': 14, '6': '.cict.common.v1.EnumMaskBehavior.MaskBehavior', '10': 'maskBehavior'},
+    const {'1': 'mask', '3': 2, '4': 1, '5': 11, '6': '.google.protobuf.FieldMask', '10': 'mask'},
+    const {'1': 'user_id', '3': 3, '4': 1, '5': 9, '10': 'userId'},
+  ],
+  '7': const {},
+};
+
+/// Descriptor for `ListScopeRequest`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listScopeRequestDescriptor = $convert.base64Decode('ChBMaXN0U2NvcGVSZXF1ZXN0ElIKDW1hc2tfYmVoYXZpb3IYASABKA4yLS5jaWN0LmNvbW1vbi52MS5FbnVtTWFza0JlaGF2aW9yLk1hc2tCZWhhdmlvclIMbWFza0JlaGF2aW9yEi4KBG1hc2sYAiABKAsyGi5nb29nbGUucHJvdG9idWYuRmllbGRNYXNrUgRtYXNrEhcKB3VzZXJfaWQYAyABKAlSBnVzZXJJZDoWiqToAxEKAmlkCgVzY29wZQoEcm9sZQ==');
+@$core.Deprecated('Use listScopeResponseDescriptor instead')
+const ListScopeResponse$json = const {
+  '1': 'ListScopeResponse',
+  '2': const [
+    const {'1': 'scopes', '3': 1, '4': 3, '5': 11, '6': '.cict.service_auth.v1.Scope', '10': 'scopes'},
+  ],
+};
+
+/// Descriptor for `ListScopeResponse`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List listScopeResponseDescriptor = $convert.base64Decode('ChFMaXN0U2NvcGVSZXNwb25zZRIzCgZzY29wZXMYASADKAsyGy5jaWN0LnNlcnZpY2VfYXV0aC52MS5TY29wZVIGc2NvcGVz');
 @$core.Deprecated('Use scopeDescriptor instead')
 const Scope$json = const {
   '1': 'Scope',

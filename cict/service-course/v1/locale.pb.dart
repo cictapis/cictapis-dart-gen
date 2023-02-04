@@ -1,6 +1,6 @@
 ///
 //  Generated code. Do not modify.
-//  source: cict/service-auth/v1/locale.proto
+//  source: cict/service-course/v1/locale.proto
 //
 // @dart = 2.12
 // ignore_for_file: annotate_overrides,camel_case_types,constant_identifier_names,directives_ordering,library_prefixes,non_constant_identifier_names,prefer_final_fields,return_of_invalid_type,unnecessary_const,unnecessary_import,unnecessary_this,unused_import,unused_shown_name
@@ -10,19 +10,19 @@ import 'dart:core' as $core;
 import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../common/v1/error_locale.pb.dart' as $23;
-import 'error_locale.pb.dart' as $24;
+import 'error_locale.pb.dart' as $32;
 
 class Locale extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Locale', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Locale', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
     ..aOM<$23.ErrorLocale>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'grpcError', subBuilder: $23.ErrorLocale.create)
-    ..aOM<$24.ErrorLocale>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'serviceError', subBuilder: $24.ErrorLocale.create)
+    ..aOM<$32.ErrorLocale>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'serviceError', subBuilder: $32.ErrorLocale.create)
     ..hasRequiredFields = false
   ;
 
   Locale._() : super();
   factory Locale({
     $23.ErrorLocale? grpcError,
-    $24.ErrorLocale? serviceError,
+    $32.ErrorLocale? serviceError,
   }) {
     final _result = create();
     if (grpcError != null) {
@@ -66,19 +66,19 @@ class Locale extends $pb.GeneratedMessage {
   $23.ErrorLocale ensureGrpcError() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $24.ErrorLocale get serviceError => $_getN(1);
+  $32.ErrorLocale get serviceError => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceError($24.ErrorLocale v) { setField(2, v); }
+  set serviceError($32.ErrorLocale v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServiceError() => $_has(1);
   @$pb.TagNumber(2)
   void clearServiceError() => clearField(2);
   @$pb.TagNumber(2)
-  $24.ErrorLocale ensureServiceError() => $_ensure(1);
+  $32.ErrorLocale ensureServiceError() => $_ensure(1);
 }
 
 class LocaleFactory extends $pb.GeneratedMessage {
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'LocaleFactory', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_auth.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'LocaleFactory', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
     ..aOM<Locale>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'vi', subBuilder: Locale.create)
     ..aOM<Locale>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'en', subBuilder: Locale.create)
     ..hasRequiredFields = false

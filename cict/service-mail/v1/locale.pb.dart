@@ -9,20 +9,20 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../common/v1/error_locale.pb.dart' as $21;
-import 'error_locale.pb.dart' as $31;
+import '../../common/v1/error_locale.pb.dart' as $23;
+import 'error_locale.pb.dart' as $34;
 
 class Locale extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'Locale', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_mail.v1'), createEmptyInstance: create)
-    ..aOM<$21.ErrorLocale>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'grpcError', subBuilder: $21.ErrorLocale.create)
-    ..aOM<$31.ErrorLocale>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'serviceError', subBuilder: $31.ErrorLocale.create)
+    ..aOM<$23.ErrorLocale>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'grpcError', subBuilder: $23.ErrorLocale.create)
+    ..aOM<$34.ErrorLocale>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'serviceError', subBuilder: $34.ErrorLocale.create)
     ..hasRequiredFields = false
   ;
 
   Locale._() : super();
   factory Locale({
-    $21.ErrorLocale? grpcError,
-    $31.ErrorLocale? serviceError,
+    $23.ErrorLocale? grpcError,
+    $34.ErrorLocale? serviceError,
   }) {
     final _result = create();
     if (grpcError != null) {
@@ -55,26 +55,26 @@ class Locale extends $pb.GeneratedMessage {
   static Locale? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $21.ErrorLocale get grpcError => $_getN(0);
+  $23.ErrorLocale get grpcError => $_getN(0);
   @$pb.TagNumber(1)
-  set grpcError($21.ErrorLocale v) { setField(1, v); }
+  set grpcError($23.ErrorLocale v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasGrpcError() => $_has(0);
   @$pb.TagNumber(1)
   void clearGrpcError() => clearField(1);
   @$pb.TagNumber(1)
-  $21.ErrorLocale ensureGrpcError() => $_ensure(0);
+  $23.ErrorLocale ensureGrpcError() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $31.ErrorLocale get serviceError => $_getN(1);
+  $34.ErrorLocale get serviceError => $_getN(1);
   @$pb.TagNumber(2)
-  set serviceError($31.ErrorLocale v) { setField(2, v); }
+  set serviceError($34.ErrorLocale v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasServiceError() => $_has(1);
   @$pb.TagNumber(2)
   void clearServiceError() => clearField(2);
   @$pb.TagNumber(2)
-  $31.ErrorLocale ensureServiceError() => $_ensure(1);
+  $34.ErrorLocale ensureServiceError() => $_ensure(1);
 }
 
 class LocaleFactory extends $pb.GeneratedMessage {

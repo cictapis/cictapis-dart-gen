@@ -10,24 +10,24 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'session.pb.dart' as $3;
+import 'session.pb.dart' as $4;
 export 'session.pb.dart';
 
 class SessionServiceClient extends $grpc.Client {
   static final _$authenticateSession = $grpc.ClientMethod<
-          $3.AuthenticateSessionRequest, $3.AuthenticateSessionResponse>(
+          $4.AuthenticateSessionRequest, $4.AuthenticateSessionResponse>(
       '/cict.service_auth.v1.SessionService/AuthenticateSession',
-      ($3.AuthenticateSessionRequest value) => value.writeToBuffer(),
+      ($4.AuthenticateSessionRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $3.AuthenticateSessionResponse.fromBuffer(value));
+          $4.AuthenticateSessionResponse.fromBuffer(value));
 
   SessionServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$3.AuthenticateSessionResponse> authenticateSession(
-      $3.AuthenticateSessionRequest request,
+  $grpc.ResponseFuture<$4.AuthenticateSessionResponse> authenticateSession(
+      $4.AuthenticateSessionRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$authenticateSession, request, options: options);
   }
@@ -37,23 +37,23 @@ abstract class SessionServiceBase extends $grpc.Service {
   $core.String get $name => 'cict.service_auth.v1.SessionService';
 
   SessionServiceBase() {
-    $addMethod($grpc.ServiceMethod<$3.AuthenticateSessionRequest,
-            $3.AuthenticateSessionResponse>(
+    $addMethod($grpc.ServiceMethod<$4.AuthenticateSessionRequest,
+            $4.AuthenticateSessionResponse>(
         'AuthenticateSession',
         authenticateSession_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $3.AuthenticateSessionRequest.fromBuffer(value),
-        ($3.AuthenticateSessionResponse value) => value.writeToBuffer()));
+            $4.AuthenticateSessionRequest.fromBuffer(value),
+        ($4.AuthenticateSessionResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$3.AuthenticateSessionResponse> authenticateSession_Pre(
+  $async.Future<$4.AuthenticateSessionResponse> authenticateSession_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$3.AuthenticateSessionRequest> request) async {
+      $async.Future<$4.AuthenticateSessionRequest> request) async {
     return authenticateSession(call, await request);
   }
 
-  $async.Future<$3.AuthenticateSessionResponse> authenticateSession(
-      $grpc.ServiceCall call, $3.AuthenticateSessionRequest request);
+  $async.Future<$4.AuthenticateSessionResponse> authenticateSession(
+      $grpc.ServiceCall call, $4.AuthenticateSessionRequest request);
 }

@@ -10,50 +10,50 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'course_timetable_day.pb.dart' as $4;
+import 'course_timetable_day.pb.dart' as $6;
 export 'course_timetable_day.pb.dart';
 
 class CourseTimetableDayServiceClient extends $grpc.Client {
   static final _$mutateCourseTimetableDay = $grpc.ClientMethod<
-          $4.MutateCourseTimetableDayRequest,
-          $4.MutateCourseTimetableDayResponse>(
+          $6.MutateCourseTimetableDayRequest,
+          $6.MutateCourseTimetableDayResponse>(
       '/cict.service_course.v1.CourseTimetableDayService/MutateCourseTimetableDay',
-      ($4.MutateCourseTimetableDayRequest value) => value.writeToBuffer(),
+      ($6.MutateCourseTimetableDayRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $4.MutateCourseTimetableDayResponse.fromBuffer(value));
+          $6.MutateCourseTimetableDayResponse.fromBuffer(value));
   static final _$getCourseTimetableDay = $grpc.ClientMethod<
-          $4.GetCourseTimetableDayRequest, $4.GetCourseTimetableDayResponse>(
+          $6.GetCourseTimetableDayRequest, $6.GetCourseTimetableDayResponse>(
       '/cict.service_course.v1.CourseTimetableDayService/GetCourseTimetableDay',
-      ($4.GetCourseTimetableDayRequest value) => value.writeToBuffer(),
+      ($6.GetCourseTimetableDayRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $4.GetCourseTimetableDayResponse.fromBuffer(value));
+          $6.GetCourseTimetableDayResponse.fromBuffer(value));
   static final _$listCourseTimetableDay = $grpc.ClientMethod<
-          $4.ListCourseTimetableDayRequest, $4.ListCourseTimetableDayResponse>(
+          $6.ListCourseTimetableDayRequest, $6.ListCourseTimetableDayResponse>(
       '/cict.service_course.v1.CourseTimetableDayService/ListCourseTimetableDay',
-      ($4.ListCourseTimetableDayRequest value) => value.writeToBuffer(),
+      ($6.ListCourseTimetableDayRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $4.ListCourseTimetableDayResponse.fromBuffer(value));
+          $6.ListCourseTimetableDayResponse.fromBuffer(value));
 
   CourseTimetableDayServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$4.MutateCourseTimetableDayResponse>
-      mutateCourseTimetableDay($4.MutateCourseTimetableDayRequest request,
+  $grpc.ResponseFuture<$6.MutateCourseTimetableDayResponse>
+      mutateCourseTimetableDay($6.MutateCourseTimetableDayRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$mutateCourseTimetableDay, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$4.GetCourseTimetableDayResponse> getCourseTimetableDay(
-      $4.GetCourseTimetableDayRequest request,
+  $grpc.ResponseFuture<$6.GetCourseTimetableDayResponse> getCourseTimetableDay(
+      $6.GetCourseTimetableDayRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getCourseTimetableDay, request, options: options);
   }
 
-  $grpc.ResponseFuture<$4.ListCourseTimetableDayResponse>
-      listCourseTimetableDay($4.ListCourseTimetableDayRequest request,
+  $grpc.ResponseFuture<$6.ListCourseTimetableDayResponse>
+      listCourseTimetableDay($6.ListCourseTimetableDayRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listCourseTimetableDay, request,
         options: options);
@@ -64,57 +64,57 @@ abstract class CourseTimetableDayServiceBase extends $grpc.Service {
   $core.String get $name => 'cict.service_course.v1.CourseTimetableDayService';
 
   CourseTimetableDayServiceBase() {
-    $addMethod($grpc.ServiceMethod<$4.MutateCourseTimetableDayRequest,
-            $4.MutateCourseTimetableDayResponse>(
+    $addMethod($grpc.ServiceMethod<$6.MutateCourseTimetableDayRequest,
+            $6.MutateCourseTimetableDayResponse>(
         'MutateCourseTimetableDay',
         mutateCourseTimetableDay_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $4.MutateCourseTimetableDayRequest.fromBuffer(value),
-        ($4.MutateCourseTimetableDayResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$4.GetCourseTimetableDayRequest,
-            $4.GetCourseTimetableDayResponse>(
+            $6.MutateCourseTimetableDayRequest.fromBuffer(value),
+        ($6.MutateCourseTimetableDayResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$6.GetCourseTimetableDayRequest,
+            $6.GetCourseTimetableDayResponse>(
         'GetCourseTimetableDay',
         getCourseTimetableDay_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $4.GetCourseTimetableDayRequest.fromBuffer(value),
-        ($4.GetCourseTimetableDayResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$4.ListCourseTimetableDayRequest,
-            $4.ListCourseTimetableDayResponse>(
+            $6.GetCourseTimetableDayRequest.fromBuffer(value),
+        ($6.GetCourseTimetableDayResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$6.ListCourseTimetableDayRequest,
+            $6.ListCourseTimetableDayResponse>(
         'ListCourseTimetableDay',
         listCourseTimetableDay_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $4.ListCourseTimetableDayRequest.fromBuffer(value),
-        ($4.ListCourseTimetableDayResponse value) => value.writeToBuffer()));
+            $6.ListCourseTimetableDayRequest.fromBuffer(value),
+        ($6.ListCourseTimetableDayResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$4.MutateCourseTimetableDayResponse>
+  $async.Future<$6.MutateCourseTimetableDayResponse>
       mutateCourseTimetableDay_Pre($grpc.ServiceCall call,
-          $async.Future<$4.MutateCourseTimetableDayRequest> request) async {
+          $async.Future<$6.MutateCourseTimetableDayRequest> request) async {
     return mutateCourseTimetableDay(call, await request);
   }
 
-  $async.Future<$4.GetCourseTimetableDayResponse> getCourseTimetableDay_Pre(
+  $async.Future<$6.GetCourseTimetableDayResponse> getCourseTimetableDay_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$4.GetCourseTimetableDayRequest> request) async {
+      $async.Future<$6.GetCourseTimetableDayRequest> request) async {
     return getCourseTimetableDay(call, await request);
   }
 
-  $async.Future<$4.ListCourseTimetableDayResponse> listCourseTimetableDay_Pre(
+  $async.Future<$6.ListCourseTimetableDayResponse> listCourseTimetableDay_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$4.ListCourseTimetableDayRequest> request) async {
+      $async.Future<$6.ListCourseTimetableDayRequest> request) async {
     return listCourseTimetableDay(call, await request);
   }
 
-  $async.Future<$4.MutateCourseTimetableDayResponse> mutateCourseTimetableDay(
-      $grpc.ServiceCall call, $4.MutateCourseTimetableDayRequest request);
-  $async.Future<$4.GetCourseTimetableDayResponse> getCourseTimetableDay(
-      $grpc.ServiceCall call, $4.GetCourseTimetableDayRequest request);
-  $async.Future<$4.ListCourseTimetableDayResponse> listCourseTimetableDay(
-      $grpc.ServiceCall call, $4.ListCourseTimetableDayRequest request);
+  $async.Future<$6.MutateCourseTimetableDayResponse> mutateCourseTimetableDay(
+      $grpc.ServiceCall call, $6.MutateCourseTimetableDayRequest request);
+  $async.Future<$6.GetCourseTimetableDayResponse> getCourseTimetableDay(
+      $grpc.ServiceCall call, $6.GetCourseTimetableDayRequest request);
+  $async.Future<$6.ListCourseTimetableDayResponse> listCourseTimetableDay(
+      $grpc.ServiceCall call, $6.ListCourseTimetableDayRequest request);
 }

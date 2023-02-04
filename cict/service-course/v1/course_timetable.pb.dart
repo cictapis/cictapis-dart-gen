@@ -9,7 +9,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'course_timetable_day.pb.dart' as $4;
+import 'course_timetable_day.pb.dart' as $6;
 
 class GetUserTimetableRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'GetUserTimetableRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
@@ -88,13 +88,13 @@ class GetUserTimetableRequest extends $pb.GeneratedMessage {
 
 class GetUserTimetableResponse extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'GetUserTimetableResponse', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
-    ..pc<$4.CourseTimetableDay>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseTimetableDays', $pb.PbFieldType.PM, subBuilder: $4.CourseTimetableDay.create)
+    ..pc<$6.CourseTimetableDay>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courseTimetableDays', $pb.PbFieldType.PM, subBuilder: $6.CourseTimetableDay.create)
     ..hasRequiredFields = false
   ;
 
   GetUserTimetableResponse._() : super();
   factory GetUserTimetableResponse({
-    $core.Iterable<$4.CourseTimetableDay>? courseTimetableDays,
+    $core.Iterable<$6.CourseTimetableDay>? courseTimetableDays,
   }) {
     final _result = create();
     if (courseTimetableDays != null) {
@@ -124,6 +124,6 @@ class GetUserTimetableResponse extends $pb.GeneratedMessage {
   static GetUserTimetableResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $core.List<$4.CourseTimetableDay> get courseTimetableDays => $_getList(0);
+  $core.List<$6.CourseTimetableDay> get courseTimetableDays => $_getList(0);
 }
 

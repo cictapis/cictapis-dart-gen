@@ -10,9 +10,9 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'course.pb.dart' as $7;
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
-import '../../common/v1/paginate.pb.dart' as $26;
+import 'course.pb.dart' as $9;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
+import '../../common/v1/paginate.pb.dart' as $28;
 
 enum MutateCourseFieldRequest_Operation {
   create_1, 
@@ -30,19 +30,19 @@ class MutateCourseFieldRequest extends $pb.GeneratedMessage {
   };
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'MutateCourseFieldRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
     ..oo(0, [1, 2, 3])
-    ..aOM<$7.Course>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'create', subBuilder: $7.Course.create)
-    ..aOM<$7.Course>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'update', subBuilder: $7.Course.create)
-    ..aOM<$7.Course>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'delete', subBuilder: $7.Course.create)
-    ..aOM<$19.FieldMask>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updateMask', subBuilder: $19.FieldMask.create)
+    ..aOM<$9.Course>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'create', subBuilder: $9.Course.create)
+    ..aOM<$9.Course>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'update', subBuilder: $9.Course.create)
+    ..aOM<$9.Course>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'delete', subBuilder: $9.Course.create)
+    ..aOM<$21.FieldMask>(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updateMask', subBuilder: $21.FieldMask.create)
     ..hasRequiredFields = false
   ;
 
   MutateCourseFieldRequest._() : super();
   factory MutateCourseFieldRequest({
-    $7.Course? create_1,
-    $7.Course? update,
-    $7.Course? delete,
-    $19.FieldMask? updateMask,
+    $9.Course? create_1,
+    $9.Course? update,
+    $9.Course? delete,
+    $21.FieldMask? updateMask,
   }) {
     final _result = create();
     if (create_1 != null) {
@@ -84,48 +84,48 @@ class MutateCourseFieldRequest extends $pb.GeneratedMessage {
   void clearOperation() => clearField($_whichOneof(0));
 
   @$pb.TagNumber(1)
-  $7.Course get create_1 => $_getN(0);
+  $9.Course get create_1 => $_getN(0);
   @$pb.TagNumber(1)
-  set create_1($7.Course v) { setField(1, v); }
+  set create_1($9.Course v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCreate_1() => $_has(0);
   @$pb.TagNumber(1)
   void clearCreate_1() => clearField(1);
   @$pb.TagNumber(1)
-  $7.Course ensureCreate_1() => $_ensure(0);
+  $9.Course ensureCreate_1() => $_ensure(0);
 
   @$pb.TagNumber(2)
-  $7.Course get update => $_getN(1);
+  $9.Course get update => $_getN(1);
   @$pb.TagNumber(2)
-  set update($7.Course v) { setField(2, v); }
+  set update($9.Course v) { setField(2, v); }
   @$pb.TagNumber(2)
   $core.bool hasUpdate() => $_has(1);
   @$pb.TagNumber(2)
   void clearUpdate() => clearField(2);
   @$pb.TagNumber(2)
-  $7.Course ensureUpdate() => $_ensure(1);
+  $9.Course ensureUpdate() => $_ensure(1);
 
   @$pb.TagNumber(3)
-  $7.Course get delete => $_getN(2);
+  $9.Course get delete => $_getN(2);
   @$pb.TagNumber(3)
-  set delete($7.Course v) { setField(3, v); }
+  set delete($9.Course v) { setField(3, v); }
   @$pb.TagNumber(3)
   $core.bool hasDelete() => $_has(2);
   @$pb.TagNumber(3)
   void clearDelete() => clearField(3);
   @$pb.TagNumber(3)
-  $7.Course ensureDelete() => $_ensure(2);
+  $9.Course ensureDelete() => $_ensure(2);
 
   @$pb.TagNumber(4)
-  $19.FieldMask get updateMask => $_getN(3);
+  $21.FieldMask get updateMask => $_getN(3);
   @$pb.TagNumber(4)
-  set updateMask($19.FieldMask v) { setField(4, v); }
+  set updateMask($21.FieldMask v) { setField(4, v); }
   @$pb.TagNumber(4)
   $core.bool hasUpdateMask() => $_has(3);
   @$pb.TagNumber(4)
   void clearUpdateMask() => clearField(4);
   @$pb.TagNumber(4)
-  $19.FieldMask ensureUpdateMask() => $_ensure(3);
+  $21.FieldMask ensureUpdateMask() => $_ensure(3);
 }
 
 class MutateCourseFieldResponse extends $pb.GeneratedMessage {
@@ -287,13 +287,13 @@ class GetCourseFieldResponse extends $pb.GeneratedMessage {
 
 class ListCourseFieldRequest extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'ListCourseFieldRequest', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
-    ..aOM<$26.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $26.Paginate.create)
+    ..aOM<$28.Paginate>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'paginate', subBuilder: $28.Paginate.create)
     ..hasRequiredFields = false
   ;
 
   ListCourseFieldRequest._() : super();
   factory ListCourseFieldRequest({
-    $26.Paginate? paginate,
+    $28.Paginate? paginate,
   }) {
     final _result = create();
     if (paginate != null) {
@@ -323,15 +323,15 @@ class ListCourseFieldRequest extends $pb.GeneratedMessage {
   static ListCourseFieldRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $26.Paginate get paginate => $_getN(0);
+  $28.Paginate get paginate => $_getN(0);
   @$pb.TagNumber(1)
-  set paginate($26.Paginate v) { setField(1, v); }
+  set paginate($28.Paginate v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasPaginate() => $_has(0);
   @$pb.TagNumber(1)
   void clearPaginate() => clearField(1);
   @$pb.TagNumber(1)
-  $26.Paginate ensurePaginate() => $_ensure(0);
+  $28.Paginate ensurePaginate() => $_ensure(0);
 }
 
 class ListCourseFieldResponse extends $pb.GeneratedMessage {
@@ -379,7 +379,7 @@ class CourseField extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'CourseField', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_course.v1'), createEmptyInstance: create)
     ..aOS(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id')
     ..aOS(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'name')
-    ..pc<$7.Course>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courses', $pb.PbFieldType.PM, subBuilder: $7.Course.create)
+    ..pc<$9.Course>(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'courses', $pb.PbFieldType.PM, subBuilder: $9.Course.create)
     ..aInt64(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updatedAt')
     ..aInt64(5, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdAt')
     ..aOS(6, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdById')
@@ -392,7 +392,7 @@ class CourseField extends $pb.GeneratedMessage {
   factory CourseField({
     $core.String? id,
     $core.String? name,
-    $core.Iterable<$7.Course>? courses,
+    $core.Iterable<$9.Course>? courses,
     $fixnum.Int64? updatedAt,
     $fixnum.Int64? createdAt,
     $core.String? createdById,
@@ -466,7 +466,7 @@ class CourseField extends $pb.GeneratedMessage {
   void clearName() => clearField(2);
 
   @$pb.TagNumber(3)
-  $core.List<$7.Course> get courses => $_getList(2);
+  $core.List<$9.Course> get courses => $_getList(2);
 
   @$pb.TagNumber(4)
   $fixnum.Int64 get updatedAt => $_getI64(3);

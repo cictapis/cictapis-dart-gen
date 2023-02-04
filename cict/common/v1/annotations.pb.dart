@@ -9,19 +9,19 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import '../../../google/protobuf/field_mask.pb.dart' as $19;
+import '../../../google/protobuf/field_mask.pb.dart' as $21;
 
-import 'enum_crud_policy.pbenum.dart' as $20;
+import 'enum_crud_policy.pbenum.dart' as $22;
 
 class AnnotationsCictMethodOptions extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'AnnotationsCictMethodOptions', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.common.v1'), createEmptyInstance: create)
-    ..e<$20.EnumCrudPolicy_CrudPolicy>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'crudPolicy', $pb.PbFieldType.OE, defaultOrMaker: $20.EnumCrudPolicy_CrudPolicy.UNSPECIFIED, valueOf: $20.EnumCrudPolicy_CrudPolicy.valueOf, enumValues: $20.EnumCrudPolicy_CrudPolicy.values)
+    ..e<$22.EnumCrudPolicy_CrudPolicy>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'crudPolicy', $pb.PbFieldType.OE, defaultOrMaker: $22.EnumCrudPolicy_CrudPolicy.UNSPECIFIED, valueOf: $22.EnumCrudPolicy_CrudPolicy.valueOf, enumValues: $22.EnumCrudPolicy_CrudPolicy.values)
     ..hasRequiredFields = false
   ;
 
   AnnotationsCictMethodOptions._() : super();
   factory AnnotationsCictMethodOptions({
-    $20.EnumCrudPolicy_CrudPolicy? crudPolicy,
+    $22.EnumCrudPolicy_CrudPolicy? crudPolicy,
   }) {
     final _result = create();
     if (crudPolicy != null) {
@@ -51,9 +51,9 @@ class AnnotationsCictMethodOptions extends $pb.GeneratedMessage {
   static AnnotationsCictMethodOptions? _defaultInstance;
 
   @$pb.TagNumber(1)
-  $20.EnumCrudPolicy_CrudPolicy get crudPolicy => $_getN(0);
+  $22.EnumCrudPolicy_CrudPolicy get crudPolicy => $_getN(0);
   @$pb.TagNumber(1)
-  set crudPolicy($20.EnumCrudPolicy_CrudPolicy v) { setField(1, v); }
+  set crudPolicy($22.EnumCrudPolicy_CrudPolicy v) { setField(1, v); }
   @$pb.TagNumber(1)
   $core.bool hasCrudPolicy() => $_has(0);
   @$pb.TagNumber(1)
@@ -62,7 +62,7 @@ class AnnotationsCictMethodOptions extends $pb.GeneratedMessage {
 
 class Annotations {
   static final cict = $pb.Extension<AnnotationsCictMethodOptions>(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'google.protobuf.MethodOptions', const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'cict', 1000001, $pb.PbFieldType.OM, defaultOrMaker: AnnotationsCictMethodOptions.getDefault, subBuilder: AnnotationsCictMethodOptions.create);
-  static final defaultMask = $pb.Extension<$19.FieldMask>(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'google.protobuf.MessageOptions', const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'defaultMask', 1000001, $pb.PbFieldType.OM, defaultOrMaker: $19.FieldMask.getDefault, subBuilder: $19.FieldMask.create);
+  static final defaultMask = $pb.Extension<$21.FieldMask>(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'google.protobuf.MessageOptions', const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'defaultMask', 1000001, $pb.PbFieldType.OM, defaultOrMaker: $21.FieldMask.getDefault, subBuilder: $21.FieldMask.create);
   static void registerAllExtensions($pb.ExtensionRegistry registry) {
     registry.add(cict);
     registry.add(defaultMask);

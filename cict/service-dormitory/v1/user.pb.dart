@@ -10,12 +10,12 @@ import 'dart:core' as $core;
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'registration_form.pb.dart' as $11;
+import 'registration_form.pb.dart' as $13;
 
 class User extends $pb.GeneratedMessage {
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'User', package: const $pb.PackageName(const $core.bool.fromEnvironment('protobuf.omit_message_names') ? '' : 'cict.service_dormitory.v1'), createEmptyInstance: create)
     ..a<$fixnum.Int64>(1, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'id', $pb.PbFieldType.OU6, defaultOrMaker: $fixnum.Int64.ZERO)
-    ..pc<$11.RegistrationForm>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'registrationForms', $pb.PbFieldType.PM, protoName: 'registrationForms', subBuilder: $11.RegistrationForm.create)
+    ..pc<$13.RegistrationForm>(2, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'registrationForms', $pb.PbFieldType.PM, protoName: 'registrationForms', subBuilder: $13.RegistrationForm.create)
     ..aInt64(3, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'updatedAt', protoName: 'updatedAt')
     ..aInt64(4, const $core.bool.fromEnvironment('protobuf.omit_field_names') ? '' : 'createdAt', protoName: 'createdAt')
     ..hasRequiredFields = false
@@ -24,7 +24,7 @@ class User extends $pb.GeneratedMessage {
   User._() : super();
   factory User({
     $fixnum.Int64? id,
-    $core.Iterable<$11.RegistrationForm>? registrationForms,
+    $core.Iterable<$13.RegistrationForm>? registrationForms,
     $fixnum.Int64? updatedAt,
     $fixnum.Int64? createdAt,
   }) {
@@ -74,7 +74,7 @@ class User extends $pb.GeneratedMessage {
   void clearId() => clearField(1);
 
   @$pb.TagNumber(2)
-  $core.List<$11.RegistrationForm> get registrationForms => $_getList(1);
+  $core.List<$13.RegistrationForm> get registrationForms => $_getList(1);
 
   @$pb.TagNumber(3)
   $fixnum.Int64 get updatedAt => $_getI64(2);

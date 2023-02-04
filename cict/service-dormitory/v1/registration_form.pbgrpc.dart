@@ -10,50 +10,50 @@ import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:grpc/service_api.dart' as $grpc;
-import 'registration_form.pb.dart' as $11;
+import 'registration_form.pb.dart' as $13;
 export 'registration_form.pb.dart';
 
 class RegistrationFormServiceClient extends $grpc.Client {
   static final _$mutateRegistrationForm = $grpc.ClientMethod<
-          $11.MutateRegistrationFormRequest,
-          $11.MutateRegistrationFormResponse>(
+          $13.MutateRegistrationFormRequest,
+          $13.MutateRegistrationFormResponse>(
       '/cict.service_dormitory.v1.RegistrationFormService/MutateRegistrationForm',
-      ($11.MutateRegistrationFormRequest value) => value.writeToBuffer(),
+      ($13.MutateRegistrationFormRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $11.MutateRegistrationFormResponse.fromBuffer(value));
+          $13.MutateRegistrationFormResponse.fromBuffer(value));
   static final _$getRegistrationForm = $grpc.ClientMethod<
-          $11.GetRegistrationFormRequest, $11.GetRegistrationFormResponse>(
+          $13.GetRegistrationFormRequest, $13.GetRegistrationFormResponse>(
       '/cict.service_dormitory.v1.RegistrationFormService/GetRegistrationForm',
-      ($11.GetRegistrationFormRequest value) => value.writeToBuffer(),
+      ($13.GetRegistrationFormRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $11.GetRegistrationFormResponse.fromBuffer(value));
+          $13.GetRegistrationFormResponse.fromBuffer(value));
   static final _$listRegistrationForm = $grpc.ClientMethod<
-          $11.ListRegistrationFormRequest, $11.ListRegistrationFormResponse>(
+          $13.ListRegistrationFormRequest, $13.ListRegistrationFormResponse>(
       '/cict.service_dormitory.v1.RegistrationFormService/ListRegistrationForm',
-      ($11.ListRegistrationFormRequest value) => value.writeToBuffer(),
+      ($13.ListRegistrationFormRequest value) => value.writeToBuffer(),
       ($core.List<$core.int> value) =>
-          $11.ListRegistrationFormResponse.fromBuffer(value));
+          $13.ListRegistrationFormResponse.fromBuffer(value));
 
   RegistrationFormServiceClient($grpc.ClientChannel channel,
       {$grpc.CallOptions? options,
       $core.Iterable<$grpc.ClientInterceptor>? interceptors})
       : super(channel, options: options, interceptors: interceptors);
 
-  $grpc.ResponseFuture<$11.MutateRegistrationFormResponse>
-      mutateRegistrationForm($11.MutateRegistrationFormRequest request,
+  $grpc.ResponseFuture<$13.MutateRegistrationFormResponse>
+      mutateRegistrationForm($13.MutateRegistrationFormRequest request,
           {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$mutateRegistrationForm, request,
         options: options);
   }
 
-  $grpc.ResponseFuture<$11.GetRegistrationFormResponse> getRegistrationForm(
-      $11.GetRegistrationFormRequest request,
+  $grpc.ResponseFuture<$13.GetRegistrationFormResponse> getRegistrationForm(
+      $13.GetRegistrationFormRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$getRegistrationForm, request, options: options);
   }
 
-  $grpc.ResponseFuture<$11.ListRegistrationFormResponse> listRegistrationForm(
-      $11.ListRegistrationFormRequest request,
+  $grpc.ResponseFuture<$13.ListRegistrationFormResponse> listRegistrationForm(
+      $13.ListRegistrationFormRequest request,
       {$grpc.CallOptions? options}) {
     return $createUnaryCall(_$listRegistrationForm, request, options: options);
   }
@@ -63,57 +63,57 @@ abstract class RegistrationFormServiceBase extends $grpc.Service {
   $core.String get $name => 'cict.service_dormitory.v1.RegistrationFormService';
 
   RegistrationFormServiceBase() {
-    $addMethod($grpc.ServiceMethod<$11.MutateRegistrationFormRequest,
-            $11.MutateRegistrationFormResponse>(
+    $addMethod($grpc.ServiceMethod<$13.MutateRegistrationFormRequest,
+            $13.MutateRegistrationFormResponse>(
         'MutateRegistrationForm',
         mutateRegistrationForm_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $11.MutateRegistrationFormRequest.fromBuffer(value),
-        ($11.MutateRegistrationFormResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$11.GetRegistrationFormRequest,
-            $11.GetRegistrationFormResponse>(
+            $13.MutateRegistrationFormRequest.fromBuffer(value),
+        ($13.MutateRegistrationFormResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$13.GetRegistrationFormRequest,
+            $13.GetRegistrationFormResponse>(
         'GetRegistrationForm',
         getRegistrationForm_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $11.GetRegistrationFormRequest.fromBuffer(value),
-        ($11.GetRegistrationFormResponse value) => value.writeToBuffer()));
-    $addMethod($grpc.ServiceMethod<$11.ListRegistrationFormRequest,
-            $11.ListRegistrationFormResponse>(
+            $13.GetRegistrationFormRequest.fromBuffer(value),
+        ($13.GetRegistrationFormResponse value) => value.writeToBuffer()));
+    $addMethod($grpc.ServiceMethod<$13.ListRegistrationFormRequest,
+            $13.ListRegistrationFormResponse>(
         'ListRegistrationForm',
         listRegistrationForm_Pre,
         false,
         false,
         ($core.List<$core.int> value) =>
-            $11.ListRegistrationFormRequest.fromBuffer(value),
-        ($11.ListRegistrationFormResponse value) => value.writeToBuffer()));
+            $13.ListRegistrationFormRequest.fromBuffer(value),
+        ($13.ListRegistrationFormResponse value) => value.writeToBuffer()));
   }
 
-  $async.Future<$11.MutateRegistrationFormResponse> mutateRegistrationForm_Pre(
+  $async.Future<$13.MutateRegistrationFormResponse> mutateRegistrationForm_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$11.MutateRegistrationFormRequest> request) async {
+      $async.Future<$13.MutateRegistrationFormRequest> request) async {
     return mutateRegistrationForm(call, await request);
   }
 
-  $async.Future<$11.GetRegistrationFormResponse> getRegistrationForm_Pre(
+  $async.Future<$13.GetRegistrationFormResponse> getRegistrationForm_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$11.GetRegistrationFormRequest> request) async {
+      $async.Future<$13.GetRegistrationFormRequest> request) async {
     return getRegistrationForm(call, await request);
   }
 
-  $async.Future<$11.ListRegistrationFormResponse> listRegistrationForm_Pre(
+  $async.Future<$13.ListRegistrationFormResponse> listRegistrationForm_Pre(
       $grpc.ServiceCall call,
-      $async.Future<$11.ListRegistrationFormRequest> request) async {
+      $async.Future<$13.ListRegistrationFormRequest> request) async {
     return listRegistrationForm(call, await request);
   }
 
-  $async.Future<$11.MutateRegistrationFormResponse> mutateRegistrationForm(
-      $grpc.ServiceCall call, $11.MutateRegistrationFormRequest request);
-  $async.Future<$11.GetRegistrationFormResponse> getRegistrationForm(
-      $grpc.ServiceCall call, $11.GetRegistrationFormRequest request);
-  $async.Future<$11.ListRegistrationFormResponse> listRegistrationForm(
-      $grpc.ServiceCall call, $11.ListRegistrationFormRequest request);
+  $async.Future<$13.MutateRegistrationFormResponse> mutateRegistrationForm(
+      $grpc.ServiceCall call, $13.MutateRegistrationFormRequest request);
+  $async.Future<$13.GetRegistrationFormResponse> getRegistrationForm(
+      $grpc.ServiceCall call, $13.GetRegistrationFormRequest request);
+  $async.Future<$13.ListRegistrationFormResponse> listRegistrationForm(
+      $grpc.ServiceCall call, $13.ListRegistrationFormRequest request);
 }

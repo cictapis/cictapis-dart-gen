@@ -38,8 +38,10 @@ const Session$json = const {
   '2': const [
     const {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     const {'1': 'user', '3': 2, '4': 1, '5': 11, '6': '.cict.service_auth.v1.User', '10': 'user'},
+    const {'1': 'workspaces', '3': 3, '4': 3, '5': 11, '6': '.cict.service_auth.v1.Workspace', '10': 'workspaces'},
+    const {'1': 'scopes', '3': 4, '4': 3, '5': 11, '6': '.cict.service_auth.v1.Scope', '10': 'scopes'},
   ],
 };
 
 /// Descriptor for `Session`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List sessionDescriptor = $convert.base64Decode('CgdTZXNzaW9uEg4KAmlkGAEgASgJUgJpZBIuCgR1c2VyGAIgASgLMhouY2ljdC5zZXJ2aWNlX2F1dGgudjEuVXNlclIEdXNlcg==');
+final $typed_data.Uint8List sessionDescriptor = $convert.base64Decode('CgdTZXNzaW9uEg4KAmlkGAEgASgJUgJpZBIuCgR1c2VyGAIgASgLMhouY2ljdC5zZXJ2aWNlX2F1dGgudjEuVXNlclIEdXNlchI/Cgp3b3Jrc3BhY2VzGAMgAygLMh8uY2ljdC5zZXJ2aWNlX2F1dGgudjEuV29ya3NwYWNlUgp3b3Jrc3BhY2VzEjMKBnNjb3BlcxgEIAMoCzIbLmNpY3Quc2VydmljZV9hdXRoLnYxLlNjb3BlUgZzY29wZXM=');
