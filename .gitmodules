@@ -1,0 +1,3 @@
+[submodule "external/cictapis"]
+	path = external/cictapis
+	url = git@github.com:cictapis/cictapis.git
